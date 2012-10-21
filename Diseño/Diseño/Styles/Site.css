@@ -1,0 +1,502 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    width: 915px;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 124%;
+    top: 1px;
+    left: -83px;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 0px;
+    min-height: 420px;
+    width: 1075px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#3a4f63;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+.divinput {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    background-color:Gray;
+  
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;  
+    font: -moz-field;
+    font: -webkit-small-control;
+    margin-top: 5px;
+    padding: 2px 3px;
+    width: 99%; 
+    color:black;   
+}
+
+
+.gridview{width: 100%; font-size: 11px; border: 1px solid #EBEBEB;}
+.gridview td{padding:1px 5px; border: 1px solid #EBEBEB;}
+.gridview th{padding:1px 5px; border: 1px solid #EBEBEB;}
+.gridviewHeader{background-image: url(~/../images/bg.gif);
+                 text-align: center; height: 22px;  font-weight: normal; font-size: 11px; 
+
+font-weight: normal;
+color: white;
+font-size: 14px;
+font-style: italic;
+font-family: Georgia;}
+.gridviewHeader a{ color:White;}
+.gridviewHeader a:hover{ color:White;}
+.gridviewRowStyle{border: 1px solid #EBEBEB; background-color:#CCF1FC;}
+.gridviewAlternateRowStyle{background-color: #F4F4F4;}
+.gridviewEdit input{font-size:11px;width:98%}
+.gridviewPagerFont input{font-size: 11px;padding:1px 5px 1px 5px;margin: 2px;background-color:#f4f4f4;background-position: -10px;border:1px solid #ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;}
+.gridviewPagerFont:hover input{border: 1px solid #6699cc; color: #000000;}
+.gridviewPagerFont select{font-size: 11px; margin: 2px;}
+.gridviewSortAlternatingRowstyle{background-color:#f2f2f2; color: #000000;}
+.gridviewSortRowStyle{background-color:#f2f2f2; color: #000000;}
+.gridviewSortAscHeaderStyle{background:url(images/up.gif) no-repeat right center;padding-left:5px;}
+.gridviewSortDescHeaderStyle{background:url(images/down.gif) no-repeat right center;padding-left:5px;}
+.gridviewFooter input{font-size:11px;width:98%;}
+.gridviewFooter td th{padding:1px 5px;}
+.gridviewShortcut{width: 11px;height: 11px;background-repeat: no-repeat;background-position: 0px 2px;padding-left: 15px;}
+
+
+.titleBanner {
+background: url("~/../images/search_bg.png") no-repeat scroll 0 0 
+transparent;
+clear: both;
+height: 40px;
+padding-left: 10px;
+padding-right: 10px;
+
+width: 920px;
+border-top: 1px 
+#E6E6E6 solid;
+font-weight: normal;
+color: 
+black;
+font-size: 24px;
+font-style: italic;
+font-family: Georgia;
+padding-top:0px;
+}
+
+.gridviewBannerUsers img {
+background-image: url(~/../images/member.png);
+width: 36px;
+height: 34px;
+}
+
+
+.messageboard {
+min-height: 30px;
+margin-bottom: 1px;
+color: 
+#3D2800;
+border: 0px solid 
+#E1BD76;
+border-bottom: 1px solid 
+#E1BD76;
+padding: 3px 3px 3px 50px;
+background-image: url(~/../images/message.png);
+background-repeat: no-repeat;
+background-position: 3px;
+background-color: 
+#F3DA92;
+font-size: 13px;
+font-weight:bold; 
+text-align:center;
+}
+
+.button{
+padding: 4px;
+border-top: 1px 
+#E6E6E6 solid;
+background-color: 
+#F2F2F2;
+font-weight: normal;
+color: 
+black;
+font-size: 14px;
+font-style: italic;
+font-family: Georgia;
+}
+
+.title{
+
+font-weight: normal;
+color: 
+black;
+font-size: 14px;
+font-style: italic;
+font-family: Georgia;
+}
+
+
+
+
+
+/* Position and style the search tools */
+div#search_container 
+{
+	
+	height: 65px;
+	width: 940px;
+	
+	clear: both;
+	
+	}
+
+.searchText {
+	float: left;
+	padding-left: 15px;
+	line-height: 16px;
+	font-size: 16px;
+	font-weight: bold;
+    height: 38px;
+    width: 469px;
+	background: url(/styles/images/searchbox.png) no-repeat;
+	border: none;
+	}
+	
+
+
+	
+	.btnSearch {
+    background: url("/styles/images/searchButton.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    font-size: 0;
+    height: 27px;
+    width: 27px;
+}
+
+.Infoboard a{display:block; float: left; border: 1px solid #CCCCCC; font-size: 11px; color: #000000; margin-right: 3px; margin-top: 6px; padding: 6px;}
+.Infoboard a:hover{border: 1px solid #000000; color: #000000; text-decoration: none;}
+
+
+
+/* AJAX TABS technorati-theme */
+.aTab1 .ajax__tab_header {background:url(images/tab-line.png) repeat-x bottom;font-size:12px;display:block;}
+.aTab1 .ajax__tab_header .ajax__tab_outer {background:url(images/tab.png) no-repeat left top;border-color:#e9e9e9;color:#222;padding-left:10px;margin-right:3px;}
+.aTab1 .ajax__tab_header .ajax__tab_inner {background:url(images/tab.png) no-repeat right top;border-color:#e9e9e9;color:#666;padding:3px 10px 2px 0px;}
+.aTab1 .ajax__tab_hover .ajax__tab_inner {color:#000000;cursor:pointer;}
+.aTab1 .ajax__tab_active .ajax__tab_outer {background:url(images/tab.png) no-repeat 0pt -40px;border-bottom-color:#ffffff;}
+.aTab1 .ajax__tab_active .ajax__tab_inner {background:url(images/tab.png) no-repeat right -40px;color:#000000;border-color:#e9e9e9}
+.aTab1 .ajax__tab_body {font-size:10px;padding:1px 0px 0px 0px;background-color:#ffffff;border:solid 1px #e9e9e9;border-top-width:0;}
+.contentTemplate{font-size:11px;padding:20px 10px 20px 10px;}
+
+/* DETAILS VIEW ADMIN STYLES ----------------------------------------*/
+/* detailsview default skin styles */
+.dv{width: 100%; border: 0px solid #e9e9e9; background-color: #fff;}
+.dv td{padding:2px 5px; border: 1px solid #e9e9e9;}
+.dv th{padding:2px 5px; border: 0px solid #e9e9e9;}
+.dvHeader{background-image: url(images/detailsview/header-bg.jpg); text-align: center; height: 22px; color: #000000; font-weight: bold; font-size: 14px;}
+.dvRowStyle{Border: 0px solid #D5D4E1; height: 22px;}
+/*.detailsviewRowStyle:hover{Border: 1px solid #D5D4E1; background-image: url(images/hover-bg.jpg);}*/
+.dvAlternateRowStyle{background-color: #fff; height: 22px;}
+.dvAlternateRowStyle:hover{background-image: url(images/hover-bg.jpg);}
+.dvFieldHeader{width: 170px;}
+.currentPW{margin-left: 15px;padding:0px 3px 0px 3px;font-size: 12px;border:1px solid #ccc;background-color:#f4f4f4;}
+
+/* USER MODAL POPUP PAGE ----------------------------------------*/
+.modalPG{background-color:#ffffff;}
+.modalPG2{background-color:#ffffff;padding:20px;}
+.modalSuccessMsg{}
+
+.checkboxList{width: 450px; overflow: auto;}
+.formSectionTitle2{font-weight: normal;font-size:14px;color:#000000; border-bottom: 1px solid #e9e9e9;margin-bottom:20px;}
+.clearBoth2{clear:Both;height:10px;}
+.messageWrap2{padding:5px;margin-bottom:10px;}
+.formLabelsText{margin:5px 0px 5px 0px;}
+.formSectionEnd{margin-bottom:20px;}
+.formNameTitle{font-size: 16px; font-weight: bold;}
+.formSectionTitle{font-weight: normal;font-size:14px;color:#000000; border-bottom: 1px solid #e9e9e9;}
+.formSectionTitle2{font-weight: normal;font-size:14px;color:#000000; border-bottom: 1px solid #e9e9e9;margin-bottom:20px;}
+.formButton input{font-size:11px;}
+
+
+
+
+
