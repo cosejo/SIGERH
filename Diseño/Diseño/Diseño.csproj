@@ -33,8 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit">
-      <HintPath>lib\AjaxControlToolkit.dll</HintPath>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30930.28736, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Visual Studio 2010\Ajax\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Enterprise.Membership.App.Account, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -107,6 +108,7 @@
     <Content Include="lib\Enterprise.Membership.App.Account.dll" />
     <Content Include="lib\Enterprise.Membership.Profiles.dll" />
     <Content Include="lib\Enterprise.Membership.Provider.dll" />
+    <Content Include="Solicitar Vacaciones\SolicitarVacaciones.aspx" />
     <Content Include="Styles\Images\bg.gif" />
     <Content Include="Styles\Images\decoy.png" />
     <Content Include="Styles\Images\gvbg.jpg" />
@@ -128,6 +130,8 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Visualizar_Vacaciones_Permisos\VisualizarSolicitudesPermisos.aspx" />
+    <Content Include="Visualizar_Vacaciones_Permisos\VisualizarSolicitudesVacaciones.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -324,6 +328,27 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitar Vacaciones\SolicitarVacaciones.aspx.cs">
+      <DependentUpon>SolicitarVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitar Vacaciones\SolicitarVacaciones.aspx.designer.cs">
+      <DependentUpon>SolicitarVacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizar_Vacaciones_Permisos\VisualizarSolicitudesPermisos.aspx.cs">
+      <DependentUpon>VisualizarSolicitudesPermisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visualizar_Vacaciones_Permisos\VisualizarSolicitudesPermisos.aspx.designer.cs">
+      <DependentUpon>VisualizarSolicitudesPermisos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizar_Vacaciones_Permisos\VisualizarSolicitudesVacaciones.aspx.cs">
+      <DependentUpon>VisualizarSolicitudesVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visualizar_Vacaciones_Permisos\VisualizarSolicitudesVacaciones.aspx.designer.cs">
+      <DependentUpon>VisualizarSolicitudesVacaciones.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
