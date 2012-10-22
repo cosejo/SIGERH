@@ -43,10 +43,12 @@
                     &nbsp;</td>
                 <td class="style1">
                     <asp:Button ID="botonResponderSolicitudes" runat="server" 
-                        style="margin-left: 347px" Text="Responder Solicitudes" />
+                        style="margin-left: 347px" Text="Responder Solicitudes" 
+                        onclick="botonResponderSolicitudes_Click" />
                 </td>
                 <td>
-                    <asp:Button ID="botonRegresar" runat="server" Text="Regresar" />
+                    <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
+                        onclick="botonRegresar_Click" />
                 </td>
                 <td>
                     &nbsp;</td>

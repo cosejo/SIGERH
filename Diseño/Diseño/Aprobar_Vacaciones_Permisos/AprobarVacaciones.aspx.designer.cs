@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Diseño.Aprobar_Vacaciones_Permisos {
+namespace Diseño.Aprobar_Vacaciones {
     
     
     public partial class AprobarVacaciones {

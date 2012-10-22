@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Diseño.Aprobar_Vacaciones_Permisos
+namespace Diseño.Solicitar_Vacaciones
 {
-    public partial class AprobarVacaciones : System.Web.UI.Page
+    public partial class SolicitarVacaciones : System.Web.UI.Page
     {
         #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
@@ -17,14 +17,16 @@ namespace Diseño.Aprobar_Vacaciones_Permisos
         #endregion
 
         #region eventos
-
-        protected void botonResponderSolicitudes_Click(object sender, EventArgs e)
+        protected void botonEnviarSolicitud_Click(object sender, EventArgs e)
         {
+
         }
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
+
         }
+
         #endregion
     }
 }
