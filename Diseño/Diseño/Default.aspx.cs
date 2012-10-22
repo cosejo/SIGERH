@@ -9,14 +9,22 @@ namespace Diseño
 {
     public partial class Default : System.Web.UI.Page
     {
+        #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void BotonContinuar_Click(object sender, EventArgs e)
+        #endregion
+
+        #region eventos
+        protected void BotonIngresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("GestionUsuarios.aspx");
+            //Response.Redirect("GestionUsuarios.aspx");
+            //Response.Redirect("/Gestion_Expedientes/SeleccionGestionExpedientes.aspx");
+            Response.Redirect("/Gestion_Vacaciones_Globales/SeleccionGestionVacaciones.aspx");
         }
+#endregion
+
     }
 }

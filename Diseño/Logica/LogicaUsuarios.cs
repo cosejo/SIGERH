@@ -84,18 +84,16 @@ namespace Logica
                       cuenta = _ListaUsuarios.Count;
                       _ListaUsuarios.Add(new InfoUsuario());
                       _ListaUsuarios.ElementAt(cuenta).Nombre = lectorSQL.GetString(0);
-                      _ListaUsuarios.ElementAt(cuenta).SegundoNombre = lectorSQL.GetString(1);
-                      _ListaUsuarios.ElementAt(cuenta).Apellido = lectorSQL.GetString(2);
-                      _ListaUsuarios.ElementAt(cuenta).SegundoApellido = lectorSQL.GetString(3);
-                      _ListaUsuarios.ElementAt(cuenta).Usuario = lectorSQL.GetString(4);
-                      _ListaUsuarios.ElementAt(cuenta).Edad = lectorSQL.GetInt32(5);
-                      _ListaUsuarios.ElementAt(cuenta).Sexo = lectorSQL.GetString(6);
-                      _ListaUsuarios.ElementAt(cuenta).TipoUsuario = lectorSQL.GetString(7);
-                      _ListaUsuarios.ElementAt(cuenta).Departamento = lectorSQL.GetString(8);
-                      _ListaUsuarios.ElementAt(cuenta).Puesto = lectorSQL.GetString(9);
-                      _ListaUsuarios.ElementAt(cuenta).Rol = lectorSQL.GetString(10);
-                      _ListaUsuarios.ElementAt(cuenta).Autorizacion = lectorSQL.GetString(11);
-                      _ListaUsuarios.ElementAt(cuenta).Contrasena = lectorSQL.GetString(12);
+                      _ListaUsuarios.ElementAt(cuenta).Apellido = lectorSQL.GetString(1);
+                      _ListaUsuarios.ElementAt(cuenta).Usuario = lectorSQL.GetString(2);
+                      _ListaUsuarios.ElementAt(cuenta).Edad = lectorSQL.GetInt32(3);
+                      _ListaUsuarios.ElementAt(cuenta).Sexo = lectorSQL.GetString(4);
+                      _ListaUsuarios.ElementAt(cuenta).TipoUsuario = lectorSQL.GetString(5);
+                      _ListaUsuarios.ElementAt(cuenta).Departamento = lectorSQL.GetString(6);
+                      _ListaUsuarios.ElementAt(cuenta).Puesto = lectorSQL.GetString(7);
+                      _ListaUsuarios.ElementAt(cuenta).Rol = lectorSQL.GetString(8);
+                      _ListaUsuarios.ElementAt(cuenta).Autorizacion = lectorSQL.GetString(9);
+                      _ListaUsuarios.ElementAt(cuenta).Contrasena = lectorSQL.GetString(10);
                     }
                     lectorSQL.Close();
                 }

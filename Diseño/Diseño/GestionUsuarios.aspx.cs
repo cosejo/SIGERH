@@ -22,10 +22,10 @@ namespace Diseño
         #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
         {
-            obtenerDepartamentos();
+            /*obtenerDepartamentos();
             obtenerRoles();
             obtenerAutorizaciones();
-            obtenerTipoUsuarios();
+            obtenerTipoUsuarios();*/
         }
         #endregion
 
@@ -230,7 +230,7 @@ namespace Diseño
         private void llenarCamposModificar() 
         {
             _Logica.obtenerUsuarioPorIndice(GridViewConsultaUsuarios.SelectedIndex);
-            TextBoxNombre.Text = _Logica.UsuarioActual.Nombre + " " + _Logica.UsuarioActual.SegundoNombre + " " + _Logica.UsuarioActual.Apellido + " " + _Logica.UsuarioActual.SegundoApellido;
+            TextBoxNombre.Text = _Logica.UsuarioActual.Nombre + " " + _Logica.UsuarioActual.Apellido;
             TextBoxUsuario.Text = _Logica.UsuarioActual.Usuario;
             DropDownListEdad.SelectedValue = _Logica.UsuarioActual.Edad+"";
             DropDownListSexo.SelectedValue = _Logica.UsuarioActual.Sexo;

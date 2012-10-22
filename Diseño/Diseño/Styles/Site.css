@@ -29,9 +29,10 @@ a:active
 
 p
 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     line-height: 1.6em;
-    width: 915px;
+    width: 1071px;
+    height: 24px;
 }
 
 
@@ -89,7 +90,7 @@ first child of the left and right table columns */
 
 .page
 {
-    width: 960px;
+    width: 1318px;
     background-color: #fff;
     margin: 20px auto 0px auto;
     border: 1px solid #496077;
@@ -101,9 +102,9 @@ first child of the left and right table columns */
     margin: 0px;
     padding: 0px;
     background: #4b6c9e;
-    width: 124%;
+    width: 100%;
     top: 1px;
-    left: -83px;
+    left: 1px;
 }
 
 .header h1

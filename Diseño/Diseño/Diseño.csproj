@@ -48,6 +48,9 @@
       <HintPath>lib\Enterprise.Membership.Provider.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
@@ -88,7 +91,18 @@
     <Content Include="App_Data\aspnetdb_log.ldf">
       <DependentUpon>ASPNETDB.MDF</DependentUpon>
     </Content>
+    <Content Include="Aprobar_Vacaciones_Permisos\AprobarVacaciones.aspx" />
+    <Content Include="Aprobar_Vacaciones_Permisos\AprobarPermisos.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Gestion_Expedientes\ConsultarExpediente.aspx" />
+    <Content Include="Gestion_Expedientes\EditarExpediente.aspx" />
+    <Content Include="Gestion_Expedientes\CrearExpediente.aspx" />
+    <Content Include="Gestion_Expedientes\HabilitarExpediente.aspx" />
+    <Content Include="Gestion_Expedientes\SeleccionGestionExpedientes.aspx" />
+    <Content Include="Gestion_Vacaciones_Globales\AgregarVacaciones.aspx" />
+    <Content Include="Gestion_Vacaciones_Globales\ModificarVacaciones.aspx" />
+    <Content Include="Gestion_Vacaciones_Globales\EliminarVacaciones.aspx" />
+    <Content Include="Gestion_Vacaciones_Globales\SeleccionGestionVacaciones.aspx" />
     <Content Include="lib\AjaxControlToolkit.dll" />
     <Content Include="lib\Enterprise.Membership.App.Account.dll" />
     <Content Include="lib\Enterprise.Membership.Profiles.dll" />
@@ -209,6 +223,20 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Aprobar_Vacaciones_Permisos\AprobarVacaciones.aspx.cs">
+      <DependentUpon>AprobarVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aprobar_Vacaciones_Permisos\AprobarVacaciones.aspx.designer.cs">
+      <DependentUpon>AprobarVacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aprobar_Vacaciones_Permisos\AprobarPermisos.aspx.cs">
+      <DependentUpon>AprobarPermisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aprobar_Vacaciones_Permisos\AprobarPermisos.aspx.designer.cs">
+      <DependentUpon>AprobarPermisos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +250,69 @@
     </Compile>
     <Compile Include="GestionUsuarios.aspx.designer.cs">
       <DependentUpon>GestionUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\ConsultarExpediente.aspx.cs">
+      <DependentUpon>ConsultarExpediente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\ConsultarExpediente.aspx.designer.cs">
+      <DependentUpon>ConsultarExpediente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\EditarExpediente.aspx.cs">
+      <DependentUpon>EditarExpediente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\EditarExpediente.aspx.designer.cs">
+      <DependentUpon>EditarExpediente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\CrearExpediente.aspx.cs">
+      <DependentUpon>CrearExpediente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\CrearExpediente.aspx.designer.cs">
+      <DependentUpon>CrearExpediente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\HabilitarExpediente.aspx.cs">
+      <DependentUpon>HabilitarExpediente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\HabilitarExpediente.aspx.designer.cs">
+      <DependentUpon>HabilitarExpediente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\SeleccionGestionExpedientes.aspx.cs">
+      <DependentUpon>SeleccionGestionExpedientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Expedientes\SeleccionGestionExpedientes.aspx.designer.cs">
+      <DependentUpon>SeleccionGestionExpedientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Vacaciones_Globales\AgregarVacaciones.aspx.cs">
+      <DependentUpon>AgregarVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Vacaciones_Globales\AgregarVacaciones.aspx.designer.cs">
+      <DependentUpon>AgregarVacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Vacaciones_Globales\ModificarVacaciones.aspx.cs">
+      <DependentUpon>ModificarVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Vacaciones_Globales\ModificarVacaciones.aspx.designer.cs">
+      <DependentUpon>ModificarVacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Vacaciones_Globales\EliminarVacaciones.aspx.cs">
+      <DependentUpon>EliminarVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Vacaciones_Globales\EliminarVacaciones.aspx.designer.cs">
+      <DependentUpon>EliminarVacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Vacaciones_Globales\SeleccionGestionVacaciones.aspx.cs">
+      <DependentUpon>SeleccionGestionVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Vacaciones_Globales\SeleccionGestionVacaciones.aspx.designer.cs">
+      <DependentUpon>SeleccionGestionVacaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

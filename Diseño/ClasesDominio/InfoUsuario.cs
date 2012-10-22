@@ -8,9 +8,7 @@ namespace ClasesDominio
     public class InfoUsuario
     {
         private String _Nombre;
-        private String _SegundoNombre;
         private String _Apellido;
-        private String _SegundoApellido;
         private String _Usuario;
         private int _Edad;
         private String _Sexo;
@@ -27,22 +25,10 @@ namespace ClasesDominio
             set { _Nombre = value; }
         }
 
-        public String SegundoNombre
-        {
-            get { return _SegundoNombre; }
-            set { _SegundoNombre = value; }
-        }
-
         public String Apellido
         {
             get { return _Apellido; }
             set { _Apellido = value; }
-        }
-
-        public String SegundoApellido
-        {
-            get { return _SegundoApellido; }
-            set { _SegundoApellido = value; }
         }
 
         public String Usuario
