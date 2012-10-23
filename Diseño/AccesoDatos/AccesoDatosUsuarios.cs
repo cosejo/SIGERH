@@ -23,8 +23,8 @@ namespace AccesoDatos
         //string _Connection = "Data Source=WIN-6ENZ8ZHHGWQ/;Trusted_Connection=True; Initial Catalog=Proyecto;User ID=Proyecto;Password=Proyecto123;Integrated Security=true";
         //string _Connection = "Data Source=10.0.0.4,1433; Network Library=DBMSSOCN; Initial Catalog=Proyecto;User ID=sa;Password=sa;";
         //string _Connection = "";
-        private const string _Connection = "Data Source=CARLOS-PC; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=proyecto;Password=Proyecto123;Integrated Security=True";
-        //private const string _Connection = "Data Source=192.168.0.105,1433; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=Proyecto;Password=Proyecto123;Integrated Security=True";
+        //private const string _Connection = "Data Source=CARLOS-PC; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=proyecto;Password=Proyecto123;Integrated Security=True";
+        private const string _Connection = "Data Source=DATA-CENTER; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=Proyecto;Password=Proyecto123;Integrated Security=false";
         #endregion
 
         #region metodos

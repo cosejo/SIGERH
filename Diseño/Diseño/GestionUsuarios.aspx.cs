@@ -24,8 +24,8 @@ namespace Diseño
         {
             /*obtenerDepartamentos();
             obtenerRoles();
-            obtenerAutorizaciones();
-            obtenerTipoUsuarios();*/
+            obtenerAutorizaciones();*/
+            obtenerTipoUsuarios();
         }
         #endregion
 
