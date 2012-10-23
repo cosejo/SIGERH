@@ -22,7 +22,8 @@ namespace Diseño
         {
             //Response.Redirect("GestionUsuarios.aspx");
             //Response.Redirect("/Gestion_Expedientes/SeleccionGestionExpedientes.aspx");
-            Response.Redirect("/Gestion_Vacaciones_Globales/SeleccionGestionVacaciones.aspx");
+            //Response.Redirect("/Gestion_Vacaciones_Globales/SeleccionGestionVacaciones.aspx");
+            Response.Redirect("/Gestion_Ausencias/SeleccionGestionAusencias.aspx");
         }
 #endregion
 

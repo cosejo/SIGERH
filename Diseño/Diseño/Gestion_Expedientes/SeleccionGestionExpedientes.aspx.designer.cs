@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Diseño.Gestion_Vacaciones_Globales {
+namespace Diseño.Gestion_Expedientes {
     
     
     public partial class SeleccionGestionExpedientes {

@@ -95,6 +95,11 @@
     <Content Include="Aprobar_Vacaciones_Permisos\AprobarVacaciones.aspx" />
     <Content Include="Aprobar_Vacaciones_Permisos\AprobarPermisos.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Gestion_Ausencias\AgregarAusencia.aspx" />
+    <Content Include="Gestion_Ausencias\EliminarAusencia.aspx" />
+    <Content Include="Gestion_Ausencias\ModificarAusencia.aspx" />
+    <Content Include="Gestion_Ausencias\SeleccionGestionAusencias.aspx" />
+    <Content Include="Gestion_Ausencias\VisualizarAusencia.aspx" />
     <Content Include="Gestion_Expedientes\ConsultarExpediente.aspx" />
     <Content Include="Gestion_Expedientes\EditarExpediente.aspx" />
     <Content Include="Gestion_Expedientes\CrearExpediente.aspx" />
@@ -254,6 +259,41 @@
     </Compile>
     <Compile Include="GestionUsuarios.aspx.designer.cs">
       <DependentUpon>GestionUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\AgregarAusencia.aspx.cs">
+      <DependentUpon>AgregarAusencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\AgregarAusencia.aspx.designer.cs">
+      <DependentUpon>AgregarAusencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\EliminarAusencia.aspx.cs">
+      <DependentUpon>EliminarAusencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\EliminarAusencia.aspx.designer.cs">
+      <DependentUpon>EliminarAusencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\ModificarAusencia.aspx.cs">
+      <DependentUpon>ModificarAusencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\ModificarAusencia.aspx.designer.cs">
+      <DependentUpon>ModificarAusencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\SeleccionGestionAusencias.aspx.cs">
+      <DependentUpon>SeleccionGestionAusencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\SeleccionGestionAusencias.aspx.designer.cs">
+      <DependentUpon>SeleccionGestionAusencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\VisualizarAusencia.aspx.cs">
+      <DependentUpon>VisualizarAusencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Ausencias\VisualizarAusencia.aspx.designer.cs">
+      <DependentUpon>VisualizarAusencia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gestion_Expedientes\ConsultarExpediente.aspx.cs">
       <DependentUpon>ConsultarExpediente.aspx</DependentUpon>
