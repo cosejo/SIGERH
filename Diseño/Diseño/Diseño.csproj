@@ -100,6 +100,11 @@
     <Content Include="Gestion_Ausencias\ModificarAusencia.aspx" />
     <Content Include="Gestion_Ausencias\SeleccionGestionAusencias.aspx" />
     <Content Include="Gestion_Ausencias\VisualizarAusencia.aspx" />
+    <Content Include="Gestion_Capacitacion\AgregarCapacitacion.aspx" />
+    <Content Include="Gestion_Capacitacion\AsignarAColaborador.aspx" />
+    <Content Include="Gestion_Capacitacion\AsignarAProyecto.aspx" />
+    <Content Include="Gestion_Capacitacion\EliminarCapacitacion.aspx" />
+    <Content Include="Gestion_Capacitacion\SeleccionGestionCapacitacion.aspx" />
     <Content Include="Gestion_Expedientes\ConsultarExpediente.aspx" />
     <Content Include="Gestion_Expedientes\EditarExpediente.aspx" />
     <Content Include="Gestion_Expedientes\CrearExpediente.aspx" />
@@ -110,6 +115,7 @@
     <Content Include="Gestion_Puestos\ModificarPuesto.aspx" />
     <Content Include="Gestion_Puestos\SeleccionGestionPuestos.aspx" />
     <Content Include="Gestion_Puestos\VisualizarPuestos.aspx" />
+    <Content Include="Gestion_Reportes\SeleccionReporte.aspx" />
     <Content Include="Gestion_Vacaciones_Globales\AgregarVacaciones.aspx" />
     <Content Include="Gestion_Vacaciones_Globales\ModificarVacaciones.aspx" />
     <Content Include="Gestion_Vacaciones_Globales\EliminarVacaciones.aspx" />
@@ -305,6 +311,41 @@
     <Compile Include="Gestion_Ausencias\VisualizarAusencia.aspx.designer.cs">
       <DependentUpon>VisualizarAusencia.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Gestion_Capacitacion\AgregarCapacitacion.aspx.cs">
+      <DependentUpon>AgregarCapacitacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Capacitacion\AgregarCapacitacion.aspx.designer.cs">
+      <DependentUpon>AgregarCapacitacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Capacitacion\AsignarAColaborador.aspx.cs">
+      <DependentUpon>AsignarAColaborador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Capacitacion\AsignarAColaborador.aspx.designer.cs">
+      <DependentUpon>AsignarAColaborador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Capacitacion\AsignarAProyecto.aspx.cs">
+      <DependentUpon>AsignarAProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Capacitacion\AsignarAProyecto.aspx.designer.cs">
+      <DependentUpon>AsignarAProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Capacitacion\EliminarCapacitacion.aspx.cs">
+      <DependentUpon>EliminarCapacitacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Capacitacion\EliminarCapacitacion.aspx.designer.cs">
+      <DependentUpon>EliminarCapacitacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Capacitacion\SeleccionGestionCapacitacion.aspx.cs">
+      <DependentUpon>SeleccionGestionCapacitacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Capacitacion\SeleccionGestionCapacitacion.aspx.designer.cs">
+      <DependentUpon>SeleccionGestionCapacitacion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Gestion_Expedientes\ConsultarExpediente.aspx.cs">
       <DependentUpon>ConsultarExpediente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -374,6 +415,13 @@
     </Compile>
     <Compile Include="Gestion_Puestos\VisualizarPuestos.aspx.designer.cs">
       <DependentUpon>VisualizarPuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Reportes\SeleccionReporte.aspx.cs">
+      <DependentUpon>SeleccionReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Reportes\SeleccionReporte.aspx.designer.cs">
+      <DependentUpon>SeleccionReporte.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gestion_Vacaciones_Globales\AgregarVacaciones.aspx.cs">
       <DependentUpon>AgregarVacaciones.aspx</DependentUpon>
