@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ModificarAusencia.aspx.cs" Inherits="Diseño.Gestion_Ausencias.ModificarAusencia" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
         .style3
@@ -47,6 +48,9 @@
                             </td>
                             <td>
                                 <asp:TextBox ID="TextBoxFecha" runat="server"></asp:TextBox>
+                                <asp:CalendarExtender ID="TextBoxFecha_CalendarExtender" runat="server" 
+                                    Enabled="True" TargetControlID="TextBoxFecha">
+                                </asp:CalendarExtender>
                             </td>
                             <td>
                                 &nbsp;</td>

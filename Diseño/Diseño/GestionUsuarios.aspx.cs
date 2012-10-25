@@ -189,9 +189,7 @@ namespace Diseño
         #region eventos
         protected void ButtonConsulta_Click(object sender, EventArgs e)
         {
-            _Logica.obtenerUsuarios();
-            GridViewConsultaUsuarios.DataSource = _Logica.ListaUsuarios;
-            GridViewConsultaUsuarios.DataBind();
+
             //Response.Write("<SCRIPT>alert('El Usuario fue borrado correctamente')</SCRIPT>");
         }
 
@@ -202,6 +200,7 @@ namespace Diseño
 
         protected void botonBorrar_Click(object sender, EventArgs e)
         {
+            Response.Redirect("/pruebaDB/Gestion_Usuarios/SeleccionGestionUsuarios.aspx");
         }
 
         protected void botonInsertar_Click(object sender, EventArgs e)
@@ -229,7 +228,7 @@ namespace Diseño
 
         private void llenarCamposModificar() 
         {
-            _Logica.obtenerUsuarioPorIndice(GridViewConsultaUsuarios.SelectedIndex);
+            /*_Logica.obtenerUsuarioPorIndice(GridViewConsultaUsuarios.SelectedIndex);
             TextBoxNombre.Text = _Logica.UsuarioActual.Nombre + " " + _Logica.UsuarioActual.Apellido;
             TextBoxUsuario.Text = _Logica.UsuarioActual.Usuario;
             DropDownListEdad.SelectedValue = _Logica.UsuarioActual.Edad+"";
@@ -240,7 +239,7 @@ namespace Diseño
             DropDownListAutorizacion.SelectedValue = _Logica.UsuarioActual.Autorizacion;
             TextBoxContrasena.Attributes.Add("value", _Logica.UsuarioActual.Contrasena);
             TextBoxConfirmarContrasena.TextMode = TextBoxMode.SingleLine;
-            TextBoxConfirmarContrasena.Attributes.Add("value", _Logica.UsuarioActual.Contrasena);
+            TextBoxConfirmarContrasena.Attributes.Add("value", _Logica.UsuarioActual.Contrasena);*/
         }
 
         public void obtenerPuestos()

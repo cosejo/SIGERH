@@ -19,7 +19,7 @@ namespace Diseño.Gestión_Departamentos
         #region eventos
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestión_Departamentos/SeleccionGestionDepartamentos.aspx");
+            Response.Redirect("/pruebaDB/Gestión_Departamentos/SeleccionGestionDepartamentos.aspx");
         }
 
         protected void botonEliminarDepartamento_Click(object sender, EventArgs e)

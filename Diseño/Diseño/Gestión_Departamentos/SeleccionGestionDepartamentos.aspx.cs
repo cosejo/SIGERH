@@ -19,27 +19,27 @@ namespace Diseño.Gestión_Departamentos
         #region eventos
         protected void botonAgregarDepartamento_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestión_Departamentos/AgregarDepartamento.aspx");
+            Response.Redirect("/pruebaDB/Gestión_Departamentos/AgregarDepartamento.aspx");
         }
 
         protected void botonModificarDepartamento_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestión_Departamentos/ModificarDepartamento.aspx");
+            Response.Redirect("/pruebaDB/Gestión_Departamentos/ModificarDepartamento.aspx");
         }
 
         protected void botonVisualizarEstructura_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestión_Departamentos/VisualizarDepartamento.aspx");
+            Response.Redirect("/pruebaDB/Gestión_Departamentos/VisualizarDepartamento.aspx");
         }
 
         protected void botonEliminarDepartamento_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestión_Departamentos/EliminarDepartamento.aspx");
+            Response.Redirect("/pruebaDB/Gestión_Departamentos/EliminarDepartamento.aspx");
         }
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Menu.aspx");
         }
 
         #endregion

@@ -19,7 +19,7 @@ namespace Diseño.Gestion_Puestos
         #region eventos
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Puestos/SeleccionGestionPuestos.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Puestos/SeleccionGestionPuestos.aspx");
         }
         #endregion
     }

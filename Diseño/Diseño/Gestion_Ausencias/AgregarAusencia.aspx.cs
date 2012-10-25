@@ -24,7 +24,7 @@ namespace Diseño.Gestion_Ausencias
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Ausencias/SeleccionGestionAusencias.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Ausencias/SeleccionGestionAusencias.aspx");
         }
         #endregion
     }

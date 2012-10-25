@@ -21,7 +21,8 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-         Centro de Manejo de Usuarios
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         Creación de Usuarios
     </h2>
     <div style="height: 63px; width: 941px;">
         <table style="width:100%;" >
@@ -201,47 +202,22 @@
             </tr>
             <tr align="left">
                 <td  align="center" class="style2">
-                    <asp:Button ID="botonInsertar" runat="server" Text="Insertar" 
-                        onclick="botonInsertar_Click" style="height: 26px" />
-                </td>
+                    &nbsp;</td>
                 <td align="center">
                     <asp:Button ID="botonEjecutar" runat="server" Text="Aplicar Cambios" 
                         onclick="ButtonEjecutar_Click" Visible = "true"/>
                 </td>
                 <td>
-                    <asp:Button ID="botonBorrar" runat="server" Text="Borrar" 
+                    <asp:Button ID="botonBorrar" runat="server" Text="Regresar" 
                         onclick="botonBorrar_Click" />
                 </td>
             </tr>
         </table>
         <input id="txtMensajes" runat="server" style="DISPLAY:none; WIDTH: 10px"/>
     <p>
-        <asp:Label ID="LabelConsulta" runat="server" Text="Consultar Usuarios: "></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="botonConsultar" 
-            runat="server" Text="Consultar" 
-            onclick="ButtonConsulta_Click" />
-    </p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <div style="width: 714px; margin-left: 0px">
-    <asp:GridView ID="GridViewConsultaUsuarios" runat="server" 
-        onselectedindexchanged="GridViewConsultaUsuarios_SelectedIndexChanged" 
-        BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" 
-        CellPadding="3" GridLines="Vertical" Width="911px" 
-        HorizontalAlign="Center">
-        <AlternatingRowStyle BackColor="#DCDCDC" />
-        <Columns>
-            <asp:CommandField ShowSelectButton="True" />
-        </Columns>
-        <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
-        <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
-        <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
-        <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
-        <SortedAscendingCellStyle BackColor="#F1F1F1" />
-        <SortedAscendingHeaderStyle BackColor="#0000A9" />
-        <SortedDescendingCellStyle BackColor="#CAC9C9" />
-        <SortedDescendingHeaderStyle BackColor="#000065" />
-    </asp:GridView>
 
         </div>
 <p>

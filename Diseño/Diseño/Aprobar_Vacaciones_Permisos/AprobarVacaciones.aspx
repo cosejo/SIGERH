@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AprobarVacaciones.aspx.cs" Inherits="Diseño.Aprobar_Vacaciones.AprobarVacaciones" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AprobarVacaciones.aspx.cs" Inherits="Diseño.Aprobar_Vacaciones_Permisos.AprobarVacaciones" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
         .style1

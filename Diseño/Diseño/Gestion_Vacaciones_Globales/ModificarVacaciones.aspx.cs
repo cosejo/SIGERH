@@ -24,7 +24,7 @@ namespace Diseño.Gestion_Vacaciones_Globales
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Vacaciones_Globales/SeleccionGestionVacaciones.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Vacaciones_Globales/SeleccionGestionVacaciones.aspx");
         }
         #endregion
 

@@ -45,13 +45,9 @@
             </tr>
             <tr>
                 <td class="style2" align="right">
-                    <asp:Label ID="Label2" runat="server" Text="Departamento:"></asp:Label>
-                </td>
+                    &nbsp;</td>
                 <td class="style1" style="margin-left: 80px">
-                    <asp:DropDownList ID="DropDownListdepartamentos" runat="server" Height="22px" 
-                        style="margin-left: 0px" Width="280px">
-                    </asp:DropDownList>
-                </td>
+                    &nbsp;</td>
                 <td>
                         &nbsp;</td>
             </tr>

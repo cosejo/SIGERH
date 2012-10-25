@@ -21,27 +21,27 @@ namespace Diseño.Gestion_Expedientes
         #region eventos
         protected void botonCrearExpediente_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Expedientes/CrearExpediente.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Expedientes/CrearExpediente.aspx");
         }
 
         protected void botonEditar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Expedientes/EditarExpediente.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Expedientes/EditarExpediente.aspx");
         }
 
         protected void botonConsultarExpediente_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Expedientes/ConsultarExpediente.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Expedientes/ConsultarExpediente.aspx");
         }
 
         protected void botonHabilitarExpediente_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Expedientes/HabilitarExpediente.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Expedientes/HabilitarExpediente.aspx");
         }
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Menu.aspx");
         }
 
         #endregion

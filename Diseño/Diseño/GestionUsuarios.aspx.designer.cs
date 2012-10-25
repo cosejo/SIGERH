@@ -220,15 +220,6 @@ namespace Diseño {
         protected global::System.Web.UI.WebControls.TextBox TextBoxConfirmarContrasena;
         
         /// <summary>
-        /// Control botonInsertar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button botonInsertar;
-        
-        /// <summary>
         /// Control botonEjecutar.
         /// </summary>
         /// <remarks>
@@ -254,32 +245,5 @@ namespace Diseño {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtMensajes;
-        
-        /// <summary>
-        /// Control LabelConsulta.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelConsulta;
-        
-        /// <summary>
-        /// Control botonConsultar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button botonConsultar;
-        
-        /// <summary>
-        /// Control GridViewConsultaUsuarios.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewConsultaUsuarios;
     }
 }

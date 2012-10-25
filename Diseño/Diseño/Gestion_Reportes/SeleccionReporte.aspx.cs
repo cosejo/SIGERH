@@ -24,7 +24,7 @@ namespace Diseño.Gestion_Reportes
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Menu.aspx");
         }
         #endregion
     }

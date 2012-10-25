@@ -20,27 +20,27 @@ namespace Diseño.Gestion_Ausencias
 
         protected void botonAgregarAusencia_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Ausencias/AgregarAusencia.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Ausencias/AgregarAusencia.aspx");
         }
 
         protected void botonModificarAusencia_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Ausencias/ModificarAusencia.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Ausencias/ModificarAusencia.aspx");
         }
 
         protected void botonConsultarAusencia_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Ausencias/VisualizarAusencia.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Ausencias/VisualizarAusencia.aspx");
         }
 
         protected void botonEliminarAusencia_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Ausencias/EliminarAusencia.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Ausencias/EliminarAusencia.aspx");
         }
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Menu.aspx");
         }
 
         #endregion

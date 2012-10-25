@@ -9,6 +9,9 @@ namespace Diseño
 {
     public partial class Default : System.Web.UI.Page
     {
+        private const string _User = "admin";
+        private const string _Pass = "admin";
+
         #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,7 +30,13 @@ namespace Diseño
             //Response.Redirect("/Gestión_Departamentos/SeleccionGestionDepartamentos.aspx");
             //Response.Redirect("/Gestion_Puestos/SeleccionGestionPuestos.aspx");
             //Response.Redirect("GestionUsuarios.aspx");
-            Response.Redirect("/Gestion_Capacitacion/SeleccionGestionCapacitacion.aspx");
+            //Response.Redirect("/Gestion_Capacitacion/SeleccionGestionCapacitacion.aspx");
+            if(TextBoxContrasena.Text!=_Pass || TextBoxUsuario.Text!=_User)
+            {
+                Response.Write("<SCRIPT>alert('Ha ingresado los datos incorrectamente, por favor vuelva a intentarlo')</SCRIPT>");
+            }
+            else
+               Response.Redirect("Menu.aspx");
         }
 #endregion
 

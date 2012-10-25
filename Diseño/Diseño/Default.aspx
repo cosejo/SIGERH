@@ -10,6 +10,16 @@
     </style>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Pragma" content="no-cache" />
+
+<script language="javascript"  type="text/javascript">
+    {
+    if(history.forward(1))
+    location.replace(history.forward(1))
+    }
+</script>
     <h2>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        Login
@@ -40,7 +50,8 @@
                     <asp:Label ID="Label2" runat="server" Text="Contraseña:"></asp:Label>
                 </td>
                 <td class="style1">
-                    <asp:TextBox ID="TextBoxContrasena" runat="server" Width="266px"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxContrasena" runat="server" Width="266px" 
+                        TextMode="Password"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>

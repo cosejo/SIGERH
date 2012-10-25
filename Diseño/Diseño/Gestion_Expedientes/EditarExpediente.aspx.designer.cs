@@ -31,15 +31,6 @@ namespace Diseño.Gestion_Expedientes {
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonCurriculum;
         
         /// <summary>
-        /// Control LinkButtonContrato.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButtonContrato;
-        
-        /// <summary>
         /// Control MultiView1.
         /// </summary>
         /// <remarks>
@@ -94,6 +85,15 @@ namespace Diseño.Gestion_Expedientes {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
+        /// Control TextBox1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
+        /// <summary>
         /// Control Label8.
         /// </summary>
         /// <remarks>
@@ -103,13 +103,31 @@ namespace Diseño.Gestion_Expedientes {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// Control Label9.
+        /// Control TextBox2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        
+        /// <summary>
+        /// Control Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
+        /// Control Button2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
         /// Control ViewInfoGeneral.

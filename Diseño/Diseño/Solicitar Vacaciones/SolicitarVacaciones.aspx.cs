@@ -24,7 +24,7 @@ namespace Diseño.Solicitar_Vacaciones
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Menu.aspx");
         }
 
         #endregion

@@ -34,12 +34,10 @@
                 </td>
                 <td class="style2">
                     <asp:LinkButton ID="LinkButtonCurriculum" runat="server" 
-                        onclick="LinkButtonCurriculum_Click">Curriculum</asp:LinkButton>
+                        onclick="LinkButtonCurriculum_Click">Contrato</asp:LinkButton>
                 </td>
                 <td>
-                    <asp:LinkButton ID="LinkButtonContrato" runat="server" 
-                        onclick="LinkButtonContrato_Click">Contrato</asp:LinkButton>
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="style1">
@@ -140,67 +138,71 @@
                             &nbsp;</td>
                     </tr>
                     <tr>
+                        <td align="RIGHT">
+                            <asp:Label ID="Label7" runat="server" Text="Organización"></asp:Label>
+                            &nbsp;
+                        </td>
                         <td>
-                            <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                        <td align="right">
+                            <asp:Label ID="Label8" runat="server" Text="Centro Educativo:"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            <asp:Button ID="Button1" runat="server" Text="Guardar" />
                         </td>
                         <td>
                             &nbsp;</td>
                         <td>
                             &nbsp;</td>
                         <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+                            <asp:Button ID="Button2" runat="server" Text="Guardar" />
                         </td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
-                        </td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
-                        <td>
-                            &nbsp;</td>
                     </tr>
                 </table>
             </asp:View>
@@ -336,7 +338,7 @@
                 <td class="style4">
                     &nbsp;</td>
                 <td align="center">
-                    <asp:Button ID="botonCrear" runat="server" Text="Crear" />
+                    <asp:Button ID="botonCrear" runat="server" Text="Aplicar Cambios" />
                 </td>
                 <td>
                     &nbsp;</td>

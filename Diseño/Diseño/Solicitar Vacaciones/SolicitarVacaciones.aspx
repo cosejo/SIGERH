@@ -79,7 +79,7 @@
                 <td class="style1">
                     &nbsp;</td>
                 <td class="style2">
-                    &nbsp;</td>
+                    </td>
                 <td>
                     &nbsp;</td>
             </tr>

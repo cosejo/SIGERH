@@ -110,12 +110,21 @@
     <Content Include="Gestion_Expedientes\CrearExpediente.aspx" />
     <Content Include="Gestion_Expedientes\HabilitarExpediente.aspx" />
     <Content Include="Gestion_Expedientes\SeleccionGestionExpedientes.aspx" />
+    <Content Include="Gestion_Proyectos\CrearProyecto.aspx" />
+    <Content Include="Gestion_Proyectos\EliminarProyecto.aspx" />
+    <Content Include="Gestion_Proyectos\HabilitarProyecto.aspx" />
+    <Content Include="Gestion_Proyectos\SeleccionGestionProyectos.aspx" />
+    <Content Include="Gestion_Proyectos\VisualizarProyecto.aspx" />
     <Content Include="Gestion_Puestos\CrearPuestos.aspx" />
     <Content Include="Gestion_Puestos\EliminarPuesto.aspx" />
     <Content Include="Gestion_Puestos\ModificarPuesto.aspx" />
     <Content Include="Gestion_Puestos\SeleccionGestionPuestos.aspx" />
     <Content Include="Gestion_Puestos\VisualizarPuestos.aspx" />
     <Content Include="Gestion_Reportes\SeleccionReporte.aspx" />
+    <Content Include="Gestion_Usuarios\AsignarPermisos.aspx" />
+    <Content Include="Gestion_Usuarios\EliminarUsuarios.aspx" />
+    <Content Include="Gestion_Usuarios\VizualizarUsuarios.aspx" />
+    <Content Include="Gestion_Usuarios\SeleccionGestionUsuarios.aspx" />
     <Content Include="Gestion_Vacaciones_Globales\AgregarVacaciones.aspx" />
     <Content Include="Gestion_Vacaciones_Globales\ModificarVacaciones.aspx" />
     <Content Include="Gestion_Vacaciones_Globales\EliminarVacaciones.aspx" />
@@ -129,6 +138,7 @@
     <Content Include="lib\Enterprise.Membership.App.Account.dll" />
     <Content Include="lib\Enterprise.Membership.Profiles.dll" />
     <Content Include="lib\Enterprise.Membership.Provider.dll" />
+    <Content Include="Menu.aspx" />
     <Content Include="Solicitar Vacaciones\SolicitarVacaciones.aspx" />
     <Content Include="Styles\Images\bg.gif" />
     <Content Include="Styles\Images\decoy.png" />
@@ -381,6 +391,41 @@
     <Compile Include="Gestion_Expedientes\SeleccionGestionExpedientes.aspx.designer.cs">
       <DependentUpon>SeleccionGestionExpedientes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Gestion_Proyectos\CrearProyecto.aspx.cs">
+      <DependentUpon>CrearProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Proyectos\CrearProyecto.aspx.designer.cs">
+      <DependentUpon>CrearProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Proyectos\EliminarProyecto.aspx.cs">
+      <DependentUpon>EliminarProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Proyectos\EliminarProyecto.aspx.designer.cs">
+      <DependentUpon>EliminarProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Proyectos\HabilitarProyecto.aspx.cs">
+      <DependentUpon>HabilitarProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Proyectos\HabilitarProyecto.aspx.designer.cs">
+      <DependentUpon>HabilitarProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Proyectos\SeleccionGestionProyectos.aspx.cs">
+      <DependentUpon>SeleccionGestionProyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Proyectos\SeleccionGestionProyectos.aspx.designer.cs">
+      <DependentUpon>SeleccionGestionProyectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Proyectos\VisualizarProyecto.aspx.cs">
+      <DependentUpon>VisualizarProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Proyectos\VisualizarProyecto.aspx.designer.cs">
+      <DependentUpon>VisualizarProyecto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Gestion_Puestos\CrearPuestos.aspx.cs">
       <DependentUpon>CrearPuestos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -422,6 +467,34 @@
     </Compile>
     <Compile Include="Gestion_Reportes\SeleccionReporte.aspx.designer.cs">
       <DependentUpon>SeleccionReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Usuarios\AsignarPermisos.aspx.cs">
+      <DependentUpon>AsignarPermisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Usuarios\AsignarPermisos.aspx.designer.cs">
+      <DependentUpon>AsignarPermisos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Usuarios\EliminarUsuarios.aspx.cs">
+      <DependentUpon>EliminarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Usuarios\EliminarUsuarios.aspx.designer.cs">
+      <DependentUpon>EliminarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Usuarios\VizualizarUsuarios.aspx.cs">
+      <DependentUpon>VizualizarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Usuarios\VizualizarUsuarios.aspx.designer.cs">
+      <DependentUpon>VizualizarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Usuarios\SeleccionGestionUsuarios.aspx.cs">
+      <DependentUpon>SeleccionGestionUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Usuarios\SeleccionGestionUsuarios.aspx.designer.cs">
+      <DependentUpon>SeleccionGestionUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gestion_Vacaciones_Globales\AgregarVacaciones.aspx.cs">
       <DependentUpon>AgregarVacaciones.aspx</DependentUpon>
@@ -488,6 +561,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

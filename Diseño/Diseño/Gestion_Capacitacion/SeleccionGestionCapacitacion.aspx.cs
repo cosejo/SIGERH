@@ -20,27 +20,27 @@ namespace Diseño.Gestion_Capacitacion
         #region eventos
         protected void botonAgregarCapacitacion_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Capacitacion/AgregarCapacitacion.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Capacitacion/AgregarCapacitacion.aspx");
         }
 
         protected void botonAsignarAProyecto_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Capacitacion/AsignarAProyecto.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Capacitacion/AsignarAProyecto.aspx");
         }
 
         protected void botonAsignarAColaborador_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Capacitacion/AsignarAColaborador.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Capacitacion/AsignarAColaborador.aspx");
         }
 
         protected void botonEliminarCapacitacion_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Capacitacion/EliminarCapacitacion.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Capacitacion/EliminarCapacitacion.aspx");
         }
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Menu.aspx");
         }
 
         #endregion

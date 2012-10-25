@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Diseño.Gestion_Vacaciones_Globales {
+namespace Diseño.Gestion_Expedientes {
     
     
     public partial class ConsultarExpediente {
@@ -40,6 +40,78 @@ namespace Diseño.Gestion_Vacaciones_Globales {
         protected global::System.Web.UI.WebControls.Button botonConsultar;
         
         /// <summary>
+        /// Control LinkButtonInfo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonInfo;
+        
+        /// <summary>
+        /// Control LinkButtonPermisos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonPermisos;
+        
+        /// <summary>
+        /// Control LinkButtonIncapacidades.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonIncapacidades;
+        
+        /// <summary>
+        /// Control LinkButtonVacaciones.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonVacaciones;
+        
+        /// <summary>
+        /// Control LinkButtonCurriculo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonCurriculo;
+        
+        /// <summary>
+        /// Control LinkButtonContrato.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonContrato;
+        
+        /// <summary>
+        /// Control MultiView1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.MultiView MultiView1;
+        
+        /// <summary>
+        /// Control View6.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View View6;
+        
+        /// <summary>
         /// Control Label2.
         /// </summary>
         /// <remarks>
@@ -56,6 +128,15 @@ namespace Diseño.Gestion_Vacaciones_Globales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewInformaciónGeneral;
+        
+        /// <summary>
+        /// Control View5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View View5;
         
         /// <summary>
         /// Control Label3.
@@ -76,6 +157,15 @@ namespace Diseño.Gestion_Vacaciones_Globales {
         protected global::System.Web.UI.WebControls.GridView GridViewPermisos;
         
         /// <summary>
+        /// Control View4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View View4;
+        
+        /// <summary>
         /// Control Label4.
         /// </summary>
         /// <remarks>
@@ -92,6 +182,15 @@ namespace Diseño.Gestion_Vacaciones_Globales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewIncapacidades;
+        
+        /// <summary>
+        /// Control View3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View View3;
         
         /// <summary>
         /// Control Label5.
@@ -112,6 +211,15 @@ namespace Diseño.Gestion_Vacaciones_Globales {
         protected global::System.Web.UI.WebControls.GridView GridViewVacaciones;
         
         /// <summary>
+        /// Control View2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View View2;
+        
+        /// <summary>
         /// Control Label6.
         /// </summary>
         /// <remarks>
@@ -128,6 +236,15 @@ namespace Diseño.Gestion_Vacaciones_Globales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewCurriculum;
+        
+        /// <summary>
+        /// Control View1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View View1;
         
         /// <summary>
         /// Control Label7.

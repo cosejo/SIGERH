@@ -25,7 +25,7 @@ namespace Diseño.Gestion_Capacitacion
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Capacitacion/SeleccionGestionCapacitacion.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Capacitacion/SeleccionGestionCapacitacion.aspx");
         }
 
         #endregion

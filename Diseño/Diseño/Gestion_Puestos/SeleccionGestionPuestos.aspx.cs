@@ -20,27 +20,27 @@ namespace Diseño.Gestion_Puestos
 
         protected void botonAgregarPuesto_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Puestos/CrearPuestos.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Puestos/CrearPuestos.aspx");
         }
 
         protected void botonModificarPuesto_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Puestos/ModificarPuesto.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Puestos/ModificarPuesto.aspx");
         }
 
         protected void botonVisualizarPuestos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Puestos/VisualizarPuestos.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Puestos/VisualizarPuestos.aspx");
         }
 
         protected void botonEliminarPuesto_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Puestos/EliminarPuesto.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Puestos/EliminarPuesto.aspx");
         }
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Menu.aspx");
         }
 
         #endregion

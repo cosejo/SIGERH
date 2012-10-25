@@ -58,6 +58,15 @@ namespace Diseño.Gestion_Ausencias {
         protected global::System.Web.UI.WebControls.TextBox TextBoxFecha;
         
         /// <summary>
+        /// Control TextBoxFecha_CalendarExtender.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender TextBoxFecha_CalendarExtender;
+        
+        /// <summary>
         /// Control Label3.
         /// </summary>
         /// <remarks>

@@ -82,7 +82,7 @@
                             <td class="style1">
                                 &nbsp;</td>
                             <td align="center">
-                                <asp:Button ID="botonAplicarCambios" runat="server" Text="Aplicar Cambios" 
+                                <asp:Button ID="botonAplicarCambios" runat="server" Text="Agregar Ausencia" 
                                     onclick="botonAplicarCambios_Click" />
                             </td>
                             <td>

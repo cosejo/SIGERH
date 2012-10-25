@@ -37,7 +37,7 @@ namespace Diseño.Gestion_Expedientes
 
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Gestion_Expedientes/SeleccionGestionExpedientes.aspx");
+            Response.Redirect("/pruebaDB/Gestion_Expedientes/SeleccionGestionExpedientes.aspx");
         }
         #endregion
 
