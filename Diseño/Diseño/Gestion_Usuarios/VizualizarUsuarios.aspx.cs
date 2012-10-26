@@ -22,10 +22,9 @@ namespace Diseño.Gestion_Usuarios
         #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*obtenerDepartamentos();
-            obtenerRoles();
-            obtenerAutorizaciones();
-            obtenerUsuarios();*/
+            _Logica.obtenerUsuarios();
+            GridViewConsultaUsuarios.DataSource = _Logica.ListaUsuarios;
+            GridViewConsultaUsuarios.DataBind();
         }
         #endregion
 
