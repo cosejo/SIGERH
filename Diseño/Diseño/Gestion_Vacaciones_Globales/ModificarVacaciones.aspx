@@ -6,22 +6,26 @@
         {
             width: 610px;
         }
+        .style2
+        {
+            width: 432px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <asp:ScriptManager ID="ScriptManager1" runat="server">
                             </asp:ScriptManager>
     <div>
-    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        Modificar Vacaciones globales</h2>
+    <h2 align="center"> Modificar Vacaciones globales</h2>
+        <p> &nbsp;</p>
         <p> &nbsp;</p>
     </div>
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
             <tr>
                 <td>
                     &nbsp;</td>
-                <td style="margin-left: 40px" align="right">
+                <td style="margin-left: 40px" align="right" class="style2">
                     <asp:Label ID="Label4" runat="server" Text="Motivo Actual:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -34,7 +38,7 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
@@ -44,7 +48,7 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style2">
                     <asp:Label ID="Label2" runat="server" Text="Fecha Inicio:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -59,7 +63,7 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
@@ -69,7 +73,7 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style2">
                     <asp:Label ID="Label3" runat="server" Text="FechaFinal:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -84,7 +88,7 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
@@ -94,7 +98,7 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style2">
                     <asp:Label ID="Label1" runat="server" Text="Motivo nuevo:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -106,21 +110,11 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
-                    &nbsp;</td>
-               <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td class="style1">
-                    <asp:Button ID="botonGuardarCambios" runat="server" 
-                        onclick="botonGuardarCambios_Click" Text="Guardar Cambios" />
+                    <br />
+                    <br />
                 </td>
                <td>
                     &nbsp;</td>
@@ -128,7 +122,20 @@
             <tr>
                 <td>
                     &nbsp;</td>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style1">
+                    <asp:Button ID="botonGuardarCambios" runat="server" 
+                        onclick="botonGuardarCambios_Click" Text="Guardar Cambios" Height="25px" 
+                        Width="145px" style="margin-left: 118px" />
+                </td>
+               <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
                 <td>
+                    &nbsp;</td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
@@ -138,13 +145,13 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
-               <td>
+               <td align="center">
                     <asp:Button ID="botonRegresar" runat="server" onclick="botonRegresar_Click" 
-                        Text="Regresar" />
+                        Text="Regresar" Height="25px" Width="145px" />
                 </td>
             </tr>
         </table>

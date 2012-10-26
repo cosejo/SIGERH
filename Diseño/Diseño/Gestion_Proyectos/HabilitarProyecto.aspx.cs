@@ -23,5 +23,10 @@ namespace Diseño.Gestion_Proyectos
         {
             Response.Redirect("/pruebaDB/Gestion_Proyectos/SeleccionGestionProyectos.aspx");
         }
+
+        protected void CheckBoxHabilitado_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -9,12 +9,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aprobar Solicitudes de Vacaciones</h2>
+    <h2 align="center"> &nbsp;Aprobar Solicitudes de PERMISOS</h2>
     </div>
     <p>
         <br />
     </p>
-    <div>
+    <div style="width: 1300px">
         <asp:GridView ID="GridView1" runat="server" BackColor="White" 
             BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" 
             GridLines="Vertical">
@@ -37,18 +37,18 @@
     <p>
         &nbsp;</p>
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
             <tr>
                 <td>
                     &nbsp;</td>
                 <td class="style1">
                     <asp:Button ID="botonResponderSolicitudes" runat="server" 
                         style="margin-left: 347px" Text="Responder Solicitudes" 
-                        onclick="botonResponderSolicitudes_Click" />
+                        onclick="botonResponderSolicitudes_Click" Height="25px" Width="145px" />
                 </td>
                 <td>
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                        onclick="botonRegresar_Click" />
+                        onclick="botonRegresar_Click" Height="25px" Width="145px" />
                 </td>
                 <td>
                     &nbsp;</td>

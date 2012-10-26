@@ -6,15 +6,27 @@
         {
             width: 750px;
         }
+        .style4
+        {
+            width: 261px;
+        }
+        .style5
+        {
+            width: 364px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <asp:ScriptManager ID="ScriptManager1" runat="server">
                             </asp:ScriptManager>
     <div>
-    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Modificar Ausencias</h2>
+    <h2 align="center"> Modificar Ausencias</h2>
     </div>
     <div>
+        <br />
+        <br />
+        <br />
+        <br />
     </div>
     <div>
 
@@ -23,19 +35,20 @@
                 <td class="style3">
                     <table style="width:100%;">
                         <tr>
-                            <td align="right">
-                                <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
-                            </td>
+                            <td align="right" class="style5">
+                                &nbsp;</td>
                             <td>
-                                <asp:DropDownList ID="DropDownListNombres" runat="server" Height="23px" 
-                                    Width="359px" onselectedindexchanged="DropDownListNombres_SelectedIndexChanged">
+                                <asp:Label ID="Label1" runat="server" Text="Cédula:"></asp:Label>
+                                <asp:DropDownList ID="DropDownListNombres" runat="server" Height="22px" 
+                                    Width="255px" 
+                                    onselectedindexchanged="DropDownListNombres_SelectedIndexChanged">
                                 </asp:DropDownList>
                             </td>
                             <td>
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="style5">
                                 &nbsp;</td>
                             <td>
                                 &nbsp;</td>
@@ -43,10 +56,10 @@
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td align="right">
-                                <asp:Label ID="Label2" runat="server" Text="Fecha:"></asp:Label>
-                            </td>
+                            <td align="right" class="style5">
+                                &nbsp;</td>
                             <td>
+                                <asp:Label ID="Label2" runat="server" Text="Fecha:"></asp:Label>
                                 <asp:TextBox ID="TextBoxFecha" runat="server"></asp:TextBox>
                                 <asp:CalendarExtender ID="TextBoxFecha_CalendarExtender" runat="server" 
                                     Enabled="True" TargetControlID="TextBoxFecha">
@@ -56,7 +69,7 @@
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="style5">
                                 &nbsp;</td>
                             <td>
                                 &nbsp;</td>
@@ -64,17 +77,17 @@
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td align="right">
-                                <asp:Label ID="Label3" runat="server" Text="Justificación:"></asp:Label>
-                            </td>
+                            <td align="right" class="style5">
+                                &nbsp;</td>
                             <td>
+                                <asp:Label ID="Label3" runat="server" Text="Justificación:"></asp:Label>
                                 <asp:CheckBox ID="CheckBox1" runat="server" />
                             </td>
                             <td>
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="style5">
                                 &nbsp;</td>
                             <td>
                                 &nbsp;</td>
@@ -82,33 +95,24 @@
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="style5">
                                 &nbsp;</td>
                             <td align="center">
-                                <asp:Button ID="botonAplicarCambios" runat="server" Text="Aplicar Cambios" 
-                                    onclick="botonAplicarCambios_Click" />
-                            </td>
-                            <td>
-                                &nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                &nbsp;</td>
-                            <td>
                                 &nbsp;</td>
                             <td>
                                 &nbsp;</td>
                         </tr>
-
                     </table>
                 </td>
                 <td>
                     <asp:GridView ID="GridView1" runat="server" style="margin-left: 51px" 
                         BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" 
-                        CellPadding="3" GridLines="Vertical">
+                        CellPadding="3" GridLines="Vertical" AutoGenerateColumns="False">
                         <AlternatingRowStyle BackColor="#DCDCDC" />
                         <Columns>
                             <asp:CommandField ShowSelectButton="True" />
+                            <asp:BoundField HeaderText="Fecha" />
+                            <asp:BoundField HeaderText="Justificada" />
                         </Columns>
                         <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                         <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
@@ -122,6 +126,19 @@
                     </asp:GridView>
                 </td>
             </tr>
+            <tr>
+                            <td class="style4">
+                                <asp:Button ID="botonAplicarCambios" runat="server" Text="Aplicar Cambios" 
+                                    onclick="botonAplicarCambios_Click" Height="25px" Width="145px" 
+                                    style="margin-left: 440px" />
+                            </td>
+                            <td align="center">
+                        <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
+                            onclick="botonRegresar_Click" Height="25px" Width="145px" />
+                            </td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
         </table>
 
     </div>
@@ -132,18 +149,8 @@
                         &nbsp;</td>
                     <td>
                         &nbsp;</td>
-                    <td>
-                        &nbsp;</td>
-                </tr>
-                <tr>
-                    <td>
-                        &nbsp;</td>
-                    <td>
-                        &nbsp;</td>
                     <td align="right">
-                        <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                            onclick="botonRegresar_Click" />
-                    </td>
+                        &nbsp;</td>
                 </tr>
             </table>
     </div>

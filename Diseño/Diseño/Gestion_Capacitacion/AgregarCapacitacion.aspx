@@ -8,7 +8,7 @@
 
         .style2
         {
-            width: 422px;
+            width: 520px;
         }
         
 
@@ -20,14 +20,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-        <h2>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <h2 align="center">
             Creación de Capacitaciones</h2>
+        <p>
+            &nbsp;</p>
         <p>
             &nbsp;</p>
     </div>
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
             <tr align="left">
                 <td class="style2" align="right">
                     <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
@@ -51,7 +52,7 @@
                     <asp:Label ID="Label3" runat="server" Text="Descripción:"></asp:Label>
                 </td>
                 <td class="style1" style="margin-left: 160px">
-                    <asp:TextBox ID="TextBoxDescripcion" runat="server" Height="22px" Width="327px"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxDescripcion" runat="server" Height="22px" Width="330px"></asp:TextBox>
                 </td>
                 <td>
                         &nbsp;</td>
@@ -78,16 +79,19 @@
                 <td class="style2">
                         &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">
-                        &nbsp;</td>
+                        <br />
+                        <br />
+                </td>
                 <td>
                     &nbsp;</td>
             </tr>
             <tr >
                 <td class="style2">
                         &nbsp;</td>
-                <td class="style1" style="margin-left: 160px" align="center">
+                <td class="style1" style="margin-left: 160px" align="left">
                     <asp:Button ID="botonCrearCapacitacion" runat="server" 
-                            Text="Crear Capacitación" onclick="botonCrearCapacitacion_Click" />
+                            Text="Crear Capacitación" onclick="botonCrearCapacitacion_Click" 
+                        Height="25px" style="margin-left: 69px" Width="145px" />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -100,14 +104,15 @@
                 <td>
                     &nbsp;</td>
             </tr>
-            <tr align="right">
+            <tr align="left">
                 <td class="style2">
                     &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">
                     &nbsp;</td>
                 <td>
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                            onclick="botonRegresar_Click" />
+                            onclick="botonRegresar_Click" Height="25px" style="margin-left: 148px" 
+                        Width="145px" />
                 </td>
             </tr>
         </table>

@@ -4,7 +4,39 @@
     <style type="text/css">
         .style1
         {
-            width: 610px;
+            width: 492px;
+        }
+        .style2
+        {
+            width: 256px;
+        }
+        .style3
+        {
+            width: 202px;
+        }
+        .style6
+        {
+            width: 256px;
+            height: 19px;
+        }
+        .style7
+        {
+            width: 492px;
+            height: 19px;
+        }
+        .style8
+        {
+            width: 202px;
+            height: 19px;
+        }
+        .style9
+        {
+            width: 236px;
+        }
+        .style10
+        {
+            width: 236px;
+            height: 19px;
         }
     </style>
 </asp:Content>
@@ -12,15 +44,15 @@
     <asp:ScriptManager ID="ScriptManager1" runat="server">
                             </asp:ScriptManager>
     <div>
-    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Vacaciones globales</h2>
+    <h2 align="center"> Agregar Vacaciones globales</h2>
         <p> &nbsp;</p>
     </div>
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
             <tr>
-                <td>
+                <td class="style9">
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style2">
                     <asp:Label ID="Label2" runat="server" Text="Fecha Inicio:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -29,23 +61,23 @@
                         Enabled="True" TargetControlID="TextBoxFechaInicio">
                     </asp:CalendarExtender>
                 </td>
-               <td>
+               <td class="style3">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style9">
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
-               <td>
+               <td class="style3">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style9">
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style2">
                     <asp:Label ID="Label3" runat="server" Text="FechaFinal:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -54,73 +86,76 @@
                         Enabled="True" TargetControlID="TextBoxFechaFinal">
                     </asp:CalendarExtender>
                 </td>
-               <td>
+               <td class="style3">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td class="style1">
-                    &nbsp;</td>
-               <td>
-                    &nbsp;</td>
+                <td class="style10">
+                    </td>
+                <td class="style6">
+                    </td>
+                <td class="style7">
+                    </td>
+               <td class="style8">
+                    </td>
             </tr>
             <tr>
-                <td>
+                <td class="style9">
                     &nbsp;</td>
-                <td  align="right">
-                    <asp:Label ID="Label1" runat="server" Text="Motivo nuevo:"></asp:Label>
+                <td  align="right" class="style2">
+                    <asp:Label ID="Label1" runat="server" Text="Motivo:"></asp:Label>
                 </td>
                 <td class="style1">
-                    <asp:TextBox ID="TextBox3" runat="server" Height="22px" Width="432px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="22px" Width="300px"></asp:TextBox>
                 </td>
-               <td>
+               <td class="style3">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style9">
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
-                    &nbsp;</td>
-               <td>
+                    <br />
+                    <br />
+                </td>
+               <td class="style3">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style9">
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
                     <asp:Button ID="botonGuardarCambios" runat="server" 
-                        onclick="botonAgregarCambios_Click" Text="Agregar" />
+                        onclick="botonAgregarCambios_Click" Text="Agregar" Height="25px" 
+                        style="margin-left: 32px" Width="145px" />
                 </td>
-               <td>
+               <td class="style3">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style9">
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
-               <td>
+               <td class="style3">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style9">
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
-               <td>
+               <td align="center" class="style3">
                     <asp:Button ID="botonRegresar" runat="server" onclick="botonRegresar_Click" 
-                        Text="Regresar" />
+                        Text="Regresar" Height="25px" Width="145px" />
                 </td>
             </tr>
         </table>

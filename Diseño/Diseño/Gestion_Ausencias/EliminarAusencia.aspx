@@ -3,23 +3,22 @@
     <style type="text/css">
         .style1
         {
-            width: 357px;
+            width: 431px;
         }
         .style2
         {
-            width: 438px;
+            width: 380px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliminar Ausencias</h2>
+    <h2 align="center"> Eliminar Ausencias</h2>
     </div>
-    <p>
-        <br />
-    </p>
+    <br />
+    <br />
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
             <tr>
                 <td class="style1" align="right">
                     <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
@@ -44,16 +43,22 @@
                 <td class="style1">
                     &nbsp;</td>
                 <td align="center" class="style2">
-                    <asp:Button ID="botonConsultar" runat="server" Text="Consultar" />
+                    <br />
+                    <asp:Button ID="botonConsultar" runat="server" Text="Consultar" Height="25px" 
+                        style="margin-left: 0px" Width="145px" />
+                    <br />
+                    <br />
                 </td>
                 <td>
-                    &nbsp;</td>
+                    <br />
+                    <br />
+                </td>
             </tr>
         </table>
     </div>
-    <hr />
+    <hr style="width: 1298px" />
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
             <tr>
                 <td>
                     &nbsp;</td>
@@ -98,9 +103,10 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td align="center">
+                <td align="left">
                     <asp:Button ID="botonEliminar" runat="server" Text="Eliminar Ausencias" 
-                        onclick="botonEliminar_Click" />
+                        onclick="botonEliminar_Click" Height="25px" style="margin-left: 569px" 
+                        Width="145px" />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -118,9 +124,9 @@
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
-                <td align="right">
+                <td align="left">
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                        onclick="botonRegresar_Click" />
+                        onclick="botonRegresar_Click" Height="25px" Width="145px" />
                 </td>
             </tr>
         </table>

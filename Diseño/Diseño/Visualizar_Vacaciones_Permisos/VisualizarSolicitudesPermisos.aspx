@@ -5,12 +5,15 @@
         {
             width: 480px;
         }
+        .style2
+        {
+            width: 515px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solicitudes 
-        de Permisos</h2>
+    <h2 align="center"> Solicitudes de Permisos</h2>
     </div>
     <p>
         <br />
@@ -19,17 +22,35 @@
         <div style="margin-top: 0px">
             <table style="width:100%;">
                 <tr>
-                    <td align="right">
-                        <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
+                    <td align="right" class="style2">
+                        <asp:Label ID="Label1" runat="server" Text="Cédula:"></asp:Label>
                     </td>
                     <td class="style1">
-                        <asp:DropDownList ID="DropDownList1" runat="server" Height="28px" Width="437px">
+                        <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="273px" 
+                            style="margin-left: 0px">
                         </asp:DropDownList>
                     </td>
                     <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="right" class="style2">
+                        &nbsp;</td>
+                    <td class="style1">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="right" class="style2">
+                        &nbsp;</td>
+                    <td class="style1">
                         <asp:Button ID="botonConsultar" runat="server" Text="Consultar" 
-                            onclick="botonConsultar_Click" />
+                            onclick="botonConsultar_Click" Height="25px" style="margin-left: 68px" 
+                            Width="145px" />
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
             </table>
         </div>
@@ -57,7 +78,7 @@
             <tr>
                 <td align="right">
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                        onclick="botonRegresar_Click" />
+                        onclick="botonRegresar_Click" Height="25px" Width="145px" />
                 </td>
             </tr>
         </table>

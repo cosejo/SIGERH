@@ -112,6 +112,24 @@ namespace Diseño.Gestion_Expedientes {
         protected global::System.Web.UI.WebControls.TextBox TextBoxNombre;
         
         /// <summary>
+        /// Control Label5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+        
+        /// <summary>
+        /// Control TextBoxNombre0.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxNombre0;
+        
+        /// <summary>
         /// Control Label2.
         /// </summary>
         /// <remarks>

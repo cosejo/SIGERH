@@ -10,31 +10,40 @@
         {
             width: 646px;
         }
+        .style3
+        {
+            width: 1285px;
+        }
+        .style4
+        {
+            width: 568px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
    <asp:ScriptManager ID="ScriptManager1" runat="server">
                             </asp:ScriptManager>
-    <div><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualización de Ausencias</h2>
+    <div><h2 align="center">Visualización de Ausencias</h2>
+        <p align="center">&nbsp;</p>
     </div>
     <p>
         <br />
     </p>
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
             <tr>
-                <td align="right">
-                    <asp:Label ID="Label1" runat="server" Text="Colaborador:"></asp:Label>
+                <td align="right" class="style4">
+                    <asp:Label ID="Label1" runat="server" Text="Cédula del colaborador:"></asp:Label>
                 </td>
                 <td class="style2">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="467px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="194px">
                     </asp:DropDownList>
                 </td>
                 <td>
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style4">
                     &nbsp;</td>
                 <td class="style2">
                     &nbsp;</td>
@@ -42,11 +51,11 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td align="right">
+                <td align="right" class="style4">
                     <asp:Label ID="Label2" runat="server" Text="Fecha Inicio:"></asp:Label>
                 </td>
                 <td class="style2">
-                    <asp:TextBox ID="TextBoxFechaInicio" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxFechaInicio" runat="server" Height="22px" Width="90px"></asp:TextBox>
                     <asp:CalendarExtender ID="TextBoxFechaInicio_CalendarExtender" runat="server" 
                         Enabled="True" TargetControlID="TextBoxFechaInicio">
                     </asp:CalendarExtender>
@@ -55,7 +64,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style4">
                     &nbsp;</td>
                 <td class="style2">
                     &nbsp;</td>
@@ -63,11 +72,11 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td align="right">
+                <td align="right" class="style4">
                     <asp:Label ID="Label3" runat="server" Text="Fecha Final:"></asp:Label>
                 </td>
                 <td class="style2">
-                    <asp:TextBox ID="TextBoxFechaFinal" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxFechaFinal" runat="server" Height="22px" Width="90px"></asp:TextBox>
                     <asp:CalendarExtender ID="TextBoxFechaFinal_CalendarExtender" runat="server" 
                         Enabled="True" TargetControlID="TextBoxFechaFinal">
                     </asp:CalendarExtender>
@@ -76,19 +85,23 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style4">
                     &nbsp;</td>
                 <td class="style2">
-                    &nbsp;</td>
+                    <br />
+                    <br />
+                </td>
                 <td>
                     &nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="style4">
                     &nbsp;</td>
                 <td class="style2">
                     <asp:Button ID="botonConsultar" runat="server" Text="Consultar" 
-                        onclick="botonConsultar_Click" />
+                        onclick="botonConsultar_Click" Height="25px" Width="145px" />
+                    <br />
+                    <br />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -96,16 +109,16 @@
         </table>
     </div>
     <div>
-        <hr />
+        <hr style="height: 1px; width: 1300px" />
     </div>
     <p>
     </p>
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -113,10 +126,10 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style3">
         <asp:GridView ID="GridViewAusencias" runat="server" BackColor="White" 
             BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" 
-            GridLines="Vertical" style="margin-left: 249px">
+            GridLines="Vertical" style="margin-left: 0px">
             <AlternatingRowStyle BackColor="#DCDCDC" />
             <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
             <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
@@ -135,7 +148,7 @@
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -148,7 +161,7 @@
         <tr align="right">
         <td class="style1"> 
             <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                onclick="botonRegresar_Click" />
+                onclick="botonRegresar_Click" Height="25px" Width="145px" />
             </td>
             </tr>
         </table>

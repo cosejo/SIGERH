@@ -7,47 +7,57 @@
         {
             width: 610px;
         }
+        .style2
+        {
+            width: 389px;
+        }
+        .style3
+        {
+            width: 938px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
     <div>
-        <h2>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gestión 
+        <h2 align="center">
+            Gestión 
             de reportes</h2>
+        <p>
+            &nbsp;</p>
         <p>
             &nbsp;</p>
     </div>
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
            <tr>
                 <td>
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style3">
                     <asp:Label ID="Label4" runat="server" Text="Categoría:"></asp:Label>
                 </td>
                 <td class="style1">
                     <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="164px">
                     </asp:DropDownList>
                 </td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style3">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr> 
             <tr>
                 <td>
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style3">
                     <asp:Label ID="Label2" runat="server" Text="Fecha Inicio:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -56,23 +66,23 @@
                         Enabled="True" TargetControlID="TextBoxFechaInicio">
                     </asp:CalendarExtender>
                 </td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style3">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style3">
                     <asp:Label ID="Label3" runat="server" Text="FechaFinal:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -81,23 +91,23 @@
                         Enabled="True" TargetControlID="TextBoxFechaFinal">
                     </asp:CalendarExtender>
                 </td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style3">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td  align="right">
+                <td  align="right" class="style3">
                     <asp:Label ID="Label1" runat="server" Text="Colaborador:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -106,23 +116,23 @@
                     </asp:DropDownList>
                     <asp:CheckBox ID="CheckBoxColaborador" runat="server" Text="Habilitar" />
                 </td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style3">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td align="right">
+                <td align="right" class="style3">
                     <asp:Label ID="Label5" runat="server" Text="Departamento:"></asp:Label>
                 </td>
                 <td class="style1">
@@ -131,51 +141,54 @@
                     </asp:DropDownList>
                     <asp:CheckBox ID="CheckBoxDepartamento" runat="server" Text="Habilitar" />
                 </td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style3">
                     &nbsp;</td>
                 <td class="style1">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td class="style1" align="center">
-                    <asp:Button ID="botonGuardarCambios" runat="server" 
-                        onclick="botonAgregarCambios_Click" Text="Agregar" />
+                    <br />
+                    <br />
                 </td>
-                <td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style3">
                     &nbsp;</td>
-                <td class="style1">
-                    &nbsp;</td>
-                <td>
+                <td class="style1" align="left">
+                    <asp:Button ID="botonGuardarCambios" runat="server" 
+                        onclick="botonAgregarCambios_Click" Text="Agregar" Height="25px" 
+                        Width="145px" style="margin-left: 57px" />
+                </td>
+                <td class="style2">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
+                <td class="style3">
                     &nbsp;</td>
                 <td class="style1">
                     &nbsp;</td>
+                <td class="style2">
+                    &nbsp;</td>
+            </tr>
+            <tr>
                 <td>
+                    &nbsp;</td>
+                <td class="style3">
+                    &nbsp;</td>
+                <td class="style1">
+                    &nbsp;</td>
+                <td class="style2" align="center">
                     <asp:Button ID="botonRegresar" runat="server" onclick="botonRegresar_Click" 
-                        Text="Regresar" />
+                        Text="Regresar" Height="25px" Width="145px" />
                 </td>
             </tr>
         </table>

@@ -7,7 +7,7 @@
 
         .style2
         {
-            width: 291px;
+            width: 466px;
         }
         .style1
         {
@@ -17,14 +17,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-        <h2>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visualizacion de 
+        <h2 align="center">
+            Visualizacion de 
             Puestos</h2>
         <p>
             &nbsp;</p>
     </div>
     <div>
-        <table style="width:100%;">
+        <table style="width:121%;">
             <tr align="center">
                 <td class="style2">
                         &nbsp;</td>
@@ -83,7 +83,7 @@
                 <td>
                         &nbsp;</td>
             </tr>
-            <tr align="right">
+            <tr align="center">
                 <td class="style2">
                         &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">

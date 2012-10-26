@@ -15,27 +15,28 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-        <h2>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Visualización de la 
+        <h2 align="center">
+            Visualización de la 
             estructura organizacional</h2>
         <p>
             &nbsp;</p>
     </div>
-    <div>
+    <div style="width: 1306px">
         <asp:TreeView ID="TreeViewDepartamentos" runat="server" Height="209px" 
             style="margin-left: 448px" Width="403px">
         </asp:TreeView>
     </div>
     <div>
-        <table style="width:100%;">
-            <tr align="right">
+        <table style="width:122%;">
+            <tr align="left">
                 <td class="style2">
                         &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">
                         &nbsp;</td>
                 <td>
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                            onclick="botonRegresar_Click" />
+                            onclick="botonRegresar_Click" Height="25px" Width="145px" 
+                        style="margin-left: 300px" />
                 </td>
             </tr>
         </table>

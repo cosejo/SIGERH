@@ -139,6 +139,7 @@
     <Content Include="lib\Enterprise.Membership.Profiles.dll" />
     <Content Include="lib\Enterprise.Membership.Provider.dll" />
     <Content Include="Menu.aspx" />
+    <Content Include="Solicitar Vacaciones\SolicitarPermiso.aspx" />
     <Content Include="Solicitar Vacaciones\SolicitarVacaciones.aspx" />
     <Content Include="Styles\Images\bg.gif" />
     <Content Include="Styles\Images\decoy.png" />
@@ -576,6 +577,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitar Vacaciones\SolicitarPermiso.aspx.cs">
+      <DependentUpon>SolicitarPermiso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitar Vacaciones\SolicitarPermiso.aspx.designer.cs">
+      <DependentUpon>SolicitarPermiso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Solicitar Vacaciones\SolicitarVacaciones.aspx.cs">
       <DependentUpon>SolicitarVacaciones.aspx</DependentUpon>

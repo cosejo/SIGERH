@@ -6,7 +6,9 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-         Consulta de usuarios GestionUsuarios</h2>
+         Consulta de usuarios </h2>
+    <p>
+         &nbsp;</p>
         <input id="txtMensajes" runat="server" style="DISPLAY:none; WIDTH: 10px"/>
     <div style="width: 714px; margin-left: 0px">
     <asp:GridView ID="GridViewConsultaUsuarios" runat="server" 
@@ -29,19 +31,11 @@
         <SortedDescendingHeaderStyle BackColor="#000065" />
     </asp:GridView>
 
-    <p>
-        <asp:Label ID="LabelConsulta" runat="server" Text="Consultar Usuarios: "></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="botonConsultar" 
-            runat="server" Text="Consultar" 
-            onclick="ButtonConsulta_Click" />
-    </p>
-
         </div>
 <p>
 
         
     <asp:Button ID="botonRegresar" runat="server" onclick="botonRegresar_Click" 
-        style="margin-left: 1139px" Text="Regresar" />
+        style="margin-left: 1105px" Text="Regresar" Height="25px" Width="145px" />
     </p>
 </asp:Content>

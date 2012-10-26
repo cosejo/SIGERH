@@ -22,9 +22,9 @@ namespace Diseño
         #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*obtenerDepartamentos();
+            obtenerDepartamentos();
             obtenerRoles();
-            obtenerAutorizaciones();*/
+            obtenerAutorizaciones();
             obtenerTipoUsuarios();
         }
         #endregion

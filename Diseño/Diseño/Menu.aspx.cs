@@ -83,5 +83,10 @@ namespace Diseño
         {
             Response.Redirect("/pruebaDB/Gestion_Reportes/SeleccionReporte.aspx");
         }
+
+        protected void botonSolicitarPermiso_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/pruebaDB/Solicitar Vacaciones/SolicitarPermiso.aspx");
+        }
     }
 }

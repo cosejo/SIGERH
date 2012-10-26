@@ -4,7 +4,7 @@
     <style type="text/css">
         .style1
         {
-            width: 410px;
+            width: 477px;
         }
     </style>
 </asp:Content>
@@ -12,13 +12,14 @@
 <asp:ScriptManager ID="ScriptManager1" runat="server">
                             </asp:ScriptManager>
     <div>
-    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        Agregar Ausencias</h2>
+    <h2 align="center"> Agregar Ausencias</h2>
     </div>
         <div>
+            <br />
+            <br />
     </div>
     <div>
-                    <table style="width:100%;">
+                    <table style="width:120%;">
                         <tr>
                             <td align="right" class="style1">
                                 <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
@@ -81,9 +82,10 @@
                         <tr>
                             <td class="style1">
                                 &nbsp;</td>
-                            <td align="center">
+                            <td align="left">
                                 <asp:Button ID="botonAplicarCambios" runat="server" Text="Agregar Ausencia" 
-                                    onclick="botonAplicarCambios_Click" />
+                                    onclick="botonAplicarCambios_Click" Height="25px" style="margin-left: 92px" 
+                                    Width="145px" />
                             </td>
                             <td>
                                 &nbsp;</td>
@@ -104,7 +106,7 @@
                                 &nbsp;</td>
                             <td>
                                 <asp:Button ID="botonRegresar" runat="server" onclick="botonRegresar_Click" 
-                                    Text="Regresar" />
+                                    Text="Regresar" Height="25px" Width="145px" />
                             </td>
                         </tr>
 

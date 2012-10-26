@@ -4,7 +4,7 @@
     <style type="text/css">
         .style1
         {
-            width: 409px;
+            width: 525px;
         }
         .style2
         {
@@ -16,19 +16,19 @@
 <asp:ScriptManager ID="ScriptManager1" runat="server">
                             </asp:ScriptManager>
     <div>
-    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Formulario de Solicitud de Vacaciones</h2>
+    <h2 align="center"> Formulario de Solicitud de Vacaciones</h2>
     </div>
     <p>
         <br />
     </p>
     <div>
-        <table style="width:100%;">
+        <table style="width:122%;">
             <tr>
                 <td class="style1" align="right">
                     <asp:Label ID="Label1" runat="server" Text="Motivo:"></asp:Label>
                 </td>
                 <td class="style2">
-                    <asp:TextBox ID="TextBox1" runat="server" Height="23px" Width="388px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="22px" Width="225px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -79,6 +79,8 @@
                 <td class="style1">
                     &nbsp;</td>
                 <td class="style2">
+                    <br />
+                    <br />
                     </td>
                 <td>
                     &nbsp;</td>
@@ -86,9 +88,10 @@
             <tr >
                 <td class="style1">
                     &nbsp;</td>
-                <td class="style2" align="center">
+                <td class="style2" align="left">
                     <asp:Button ID="botonEnviarSolicitud" runat="server" 
-                        onclick="botonEnviarSolicitud_Click" Text="Enviar Solicitud" />
+                        onclick="botonEnviarSolicitud_Click" Text="Enviar Solicitud" Height="25px" 
+                        Width="145px" style="margin-left: 48px" />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -106,9 +109,9 @@
                     &nbsp;</td>
                 <td class="style2">
                     &nbsp;</td>
-                <td align="right">
+                <td align="center">
                     <asp:Button ID="botonRegresar" runat="server" onclick="botonRegresar_Click" 
-                        Text="Regresar" />
+                        Text="Regresar" Height="25px" Width="145px" />
                 </td>
             </tr>
         </table>

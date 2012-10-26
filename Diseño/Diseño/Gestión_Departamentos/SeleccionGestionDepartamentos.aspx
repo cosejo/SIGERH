@@ -5,7 +5,7 @@
 
         .style2
         {
-            width: 291px;
+            width: 441px;
         }
         .style1
         {
@@ -15,20 +15,22 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-        <h2>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gestión de 
+        <h2 align="center">
+            Gestión de 
             Departamentos</h2>
         <p>
             &nbsp;</p>
     </div>
     <div>
-        <table style="width:100%;">
+        <table style="width:118%;">
             <tr align="center">
                 <td class="style2">
                         &nbsp;</td>
                 <td class="style1">
                     <asp:Button ID="botonAgregarDepartamento" runat="server" Text="Agregar Departamento" 
-                            onclick="botonAgregarDepartamento_Click" />
+                            onclick="botonAgregarDepartamento_Click" Height="25px" Width="150px" />
+                    <br />
+                    <br />
                 </td>
                 <td>
                         &nbsp;</td>
@@ -38,7 +40,10 @@
                         &nbsp;</td>
                 <td class="style1">
                     <asp:Button ID="botonModificarDepartamento" runat="server" Text="Modificar Departamento" 
-                            onclick="botonModificarDepartamento_Click" />
+                            onclick="botonModificarDepartamento_Click" Height="25px" 
+                        Width="150px" />
+                    <br />
+                    <br />
                 </td>
                 <td>
                         &nbsp;</td>
@@ -49,7 +54,9 @@
                 <td class="style1" style="margin-left: 80px">
                     <asp:Button ID="botonVisualizarEstructura" runat="server" 
                             Text="Visualizar Estructura" 
-                        onclick="botonVisualizarEstructura_Click" />
+                        onclick="botonVisualizarEstructura_Click" Height="25px" Width="150px" />
+                    <br />
+                    <br />
                 </td>
                 <td>
                         &nbsp;</td>
@@ -60,7 +67,8 @@
                 <td class="style1" style="margin-left: 160px">
                     <asp:Button ID="botonEliminarDepartamento" runat="server" 
                             Text="Eliminar Departamento" 
-                            onclick="botonEliminarDepartamento_Click" />
+                            onclick="botonEliminarDepartamento_Click" Height="25px" 
+                        Width="150px" />
                 </td>
                 <td>
                         &nbsp;</td>
@@ -80,7 +88,7 @@
                         &nbsp;</td>
                 <td>
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                            onclick="botonRegresar_Click" />
+                            onclick="botonRegresar_Click" Height="25px" Width="150px" />
                 </td>
             </tr>
         </table>

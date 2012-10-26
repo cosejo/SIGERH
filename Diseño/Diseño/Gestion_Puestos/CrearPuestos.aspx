@@ -6,7 +6,7 @@
 
         .style2
         {
-            width: 291px;
+            width: 536px;
         }
         .style1
         {
@@ -16,14 +16,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-        <h2>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Creación de 
+        <h2 align="center">
+            Creación de 
             Puestos</h2>
         <p>
             &nbsp;</p>
     </div>
     <div>
-        <table style="width:100%;">
+        <table style="width:120%;">
             <tr>
                 <td class="style2" align="right">
                     <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
@@ -43,14 +43,6 @@
                 <td>
                         &nbsp;</td>
             </tr>
-            <tr>
-                <td class="style2" align="right">
-                    &nbsp;</td>
-                <td class="style1" style="margin-left: 80px">
-                    &nbsp;</td>
-                <td>
-                        &nbsp;</td>
-            </tr>
             <tr >
                 <td class="style2">
                         &nbsp;</td>
@@ -59,13 +51,13 @@
                 <td>
                         &nbsp;</td>
             </tr>
-            <tr align="center">
+            <tr align="left">
                 <td class="style2">
                         &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">
                     <asp:Button ID="botonCrearPuesto" runat="server" 
                             Text="Crear Puesto" 
-                            onclick="botonCrearPuesto_Click" />
+                            onclick="botonCrearPuesto_Click" style="margin-left: 56px" />
                 </td>
                 <td>
                         &nbsp;</td>
@@ -78,14 +70,14 @@
                 <td>
                     &nbsp;</td>
             </tr>
-            <tr align="right">
+            <tr align="left">
                 <td class="style2">
                     &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">
                     &nbsp;</td>
                 <td>
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                            onclick="botonRegresar_Click" />
+                            onclick="botonRegresar_Click" style="margin-left: 135px" />
                 </td>
             </tr>
         </table>

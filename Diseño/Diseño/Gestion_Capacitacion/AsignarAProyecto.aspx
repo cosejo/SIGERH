@@ -6,7 +6,7 @@
 
         .style2
         {
-            width: 422px;
+            width: 692px;
         }
         
 
@@ -18,9 +18,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-        <h2>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <h2 align="center">
             Asignación de Capacitaciones a proyectos</h2>
+        <p>
+            &nbsp;</p>
         <p>
             &nbsp;</p>
     </div>
@@ -62,16 +63,19 @@
                 <td class="style2">
                         &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">
-                        &nbsp;</td>
+                        <br />
+                        <br />
+                </td>
                 <td>
                         &nbsp;</td>
             </tr>
-            <tr align="center">
+            <tr align="left">
                 <td class="style2">
                         &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">
                     <asp:Button ID="botonAsignarCapacitacion" runat="server" 
-                            Text="Asignar Capacitación" onclick="botonAsignarCapacitacion_Click" />
+                            Text="Asignar Capacitación" onclick="botonAsignarCapacitacion_Click" 
+                        Height="25px" style="margin-left: 32px" Width="145px" />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -91,7 +95,7 @@
                         &nbsp;</td>
                 <td>
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                            onclick="botonRegresar_Click" />
+                            onclick="botonRegresar_Click" Height="25px" Width="145px" />
                 </td>
             </tr>
         </table>

@@ -4,27 +4,30 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <div>
 <h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Menu
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Menu
 </h2>
 </div>
-<div></div>
+<div style="width: 1297px">
+    <br />
+    <br />
+    </div>
 <div>
-    <table style="width:100%;">
+    <table style="width:121%;">
         <tr align="center">
             <td>
                 <asp:Button ID="botonGestionExpedientes" runat="server" 
-                    Text="Gestión de expedientes" onclick="botonGestionExpedientes_Click" />
+                    Text="Gestión de expedientes" onclick="botonGestionExpedientes_Click" 
+                    Height="26px" Width="215px" />
             </td>
             <td>
                 <asp:Button ID="botonGestionGlobalVacaciones" runat="server" 
                     Text="Gestión global de vacaciones" 
-                    onclick="botonGestionGlobalVacaciones_Click" />
+                    onclick="botonGestionGlobalVacaciones_Click" Height="26px" Width="215px" />
             </td>
             <td>
                 <asp:Button ID="botonAprobarVacaciones" runat="server" 
                     Text="Aprobar vacaciones a colaborador" 
-                    onclick="botonAprobarVacaciones_Click" />
+                    onclick="botonAprobarVacaciones_Click" Height="26px" Width="215px" />
             </td>
         </tr>
         <tr>
@@ -38,16 +41,18 @@ Menu
         <tr align="center">
             <td>
                 <asp:Button ID="botonAprobarPermisos" runat="server" 
-                    Text="Aprobar permisos a colaborador" onclick="botonAprobarPermisos_Click" />
+                    Text="Aprobar permisos a colaborador" onclick="botonAprobarPermisos_Click" 
+                    Height="26px" Width="215px" />
             </td>
             <td>
                 <asp:Button ID="botonSolicitarVacaciones" runat="server" 
-                    Text="Solicitar vacaciones" onclick="botonSolicitarVacaciones_Click" />
+                    Text="Solicitar vacaciones" onclick="botonSolicitarVacaciones_Click" 
+                    Height="26px" Width="215px" />
             </td>
             <td>
                 <asp:Button ID="botonVisualizarPermisos" runat="server" 
                     Text="Visualizar solicitudes de permisos" 
-                    onclick="botonVisualizarPermisos_Click" />
+                    onclick="botonVisualizarPermisos_Click" Height="26px" Width="215px" />
             </td>
         </tr>
         <tr>
@@ -62,15 +67,17 @@ Menu
             <td>
                 <asp:Button ID="botonVisualizarVacaciones" runat="server" 
                     Text="Visualizar solicitudes de vacaciones" 
-                    onclick="botonVisualizarVacaciones_Click" />
+                    onclick="botonVisualizarVacaciones_Click" Height="26px" Width="215px" />
             </td>
             <td>
                 <asp:Button ID="botonGestionAusencias" runat="server" 
-                    Text="Gestión de ausencias" onclick="botonGestionAusencias_Click" />
+                    Text="Gestión de ausencias" onclick="botonGestionAusencias_Click" 
+                    Height="26px" Width="215px" />
             </td>
             <td>
                 <asp:Button ID="botonGestionDepartamento" runat="server" 
-                    Text="Gestión de departamentos" onclick="botonGestionDepartamento_Click" />
+                    Text="Gestión de departamentos" onclick="botonGestionDepartamento_Click" 
+                    Height="26px" Width="215px" />
             </td>
         </tr>
         <tr>
@@ -84,15 +91,16 @@ Menu
         <tr align="center">
             <td>
                 <asp:Button ID="botonGestionPuestos" runat="server" Text="Gestión de puestos" 
-                    onclick="botonGestionPuestos_Click" />
+                    onclick="botonGestionPuestos_Click" Height="26px" Width="215px" />
             </td>
             <td>
                 <asp:Button ID="botonGestionCapacitacion" runat="server" 
-                    Text="Gestión de capacitación" onclick="botonGestionCapacitacion_Click" />
+                    Text="Gestión de capacitación" onclick="botonGestionCapacitacion_Click" 
+                    Height="26px" Width="215px" />
             </td>
             <td>
                 <asp:Button ID="botonGestionUsuarios" runat="server" Text="Gestión de usuarios" 
-                    onclick="botonGestionUsuarios_Click" />
+                    onclick="botonGestionUsuarios_Click" Height="26px" Width="215px" />
             </td>
         </tr>
         <tr>
@@ -106,14 +114,18 @@ Menu
         <tr align="center">
             <td>
                 <asp:Button ID="botonGestionProyectos" runat="server" 
-                    Text="Gestión de proyectos" onclick="botonGestionProyectos_Click" />
+                    Text="Gestión de proyectos" onclick="botonGestionProyectos_Click" 
+                    Height="26px" Width="215px" />
             </td>
             <td>
                 <asp:Button ID="botonGestionReportes" runat="server" Text="Gestión de Reportes" 
-                    onclick="botonGestionReportes_Click" />
+                    onclick="botonGestionReportes_Click" Height="26px" Width="215px" />
             </td>
             <td>
-                &nbsp;</td>
+                <asp:Button ID="botonSolicitarPermiso" runat="server" 
+                    Text="Solicitar permiso" onclick="botonSolicitarPermiso_Click" 
+                    Height="26px" Width="215px" />
+            </td>
         </tr>
         <tr>
             <td>

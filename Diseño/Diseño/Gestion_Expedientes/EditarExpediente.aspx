@@ -4,49 +4,41 @@
     <style type="text/css">
         .style1
         {
-            width: 365px;
-        }
-        .style2
-        {
-            width: 323px;
-        }
-        .style3
-        {
-            width: 300px;
+            width: 635px;
         }
         .style4
         {
             width: 308px;
         }
+        .style5
+        {
+            width: 699px;
+        }
+        .style8
+        {
+            width: 528px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        EDITAR Expediente </h2>
+    <h2 align="center"> Editar Expediente </h2>
     </div>
     <p>
-        <table style="width:100%;">
+        <table style="width:102%;">
             <tr align="center">
-                <td class="style1">
+                <td class="style1" align="center">
                     <asp:LinkButton ID="LinkButtonInformacionGeneral" runat="server" 
                         onclick="LinkButtonInformacionGeneral_Click">Informacion General</asp:LinkButton>
                 </td>
-                <td class="style2">
+                <td class="style5" align="center">
                     <asp:LinkButton ID="LinkButtonCurriculum" runat="server" 
                         onclick="LinkButtonCurriculum_Click">Contrato</asp:LinkButton>
                 </td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style1">
-                    &nbsp;</td>
-            </tr>
             <tr >
                 <td class="style1">
                     &nbsp;</td>
-                <td class="style2">
+                <td class="style5">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -93,7 +85,7 @@
                         <td>
                             &nbsp;</td> 
                          <td>
-                             Informacón del Curriculo</td>
+                             Información del Curriculo</td>
                         <td>
                             &nbsp;</td>
                         <td>
@@ -194,14 +186,16 @@
                         <td>
                             &nbsp;</td>
                         <td>
-                            <asp:Button ID="Button1" runat="server" Text="Guardar" />
+                            <asp:Button ID="Button1" runat="server" Text="Guardar" Height="25px" 
+                                Width="145px" />
                         </td>
                         <td>
                             &nbsp;</td>
                         <td>
                             &nbsp;</td>
                         <td>
-                            <asp:Button ID="Button2" runat="server" Text="Guardar" />
+                            <asp:Button ID="Button2" runat="server" Text="Guardar" Height="25px" 
+                                Width="145px" />
                         </td>
                     </tr>
                 </table>
@@ -209,51 +203,43 @@
             <asp:View ID="ViewInfoGeneral" runat="server">
             <table style="width:100%;">
             <tr>
-                <td class="style3">
+                <td class="style8">
                     &nbsp;</td>
                 <td>
-                    Información General</td>
+                    &nbsp;</td>
                 <td>
                     &nbsp;</td>
             </tr>
                         <tr>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style3" align="right">
+                <td class="style8" align="right">
                     <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
-                </td>
+                            </td>
                 <td>
-                    <asp:TextBox ID="TextBoxNombre" runat="server" Width="586px"></asp:TextBox>
-                </td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
+                    <asp:TextBox ID="TextBoxNombre" runat="server" Height="24px" Width="507px"></asp:TextBox>
+                            </td>
                 <td>
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style3" align="right">
+                <td class="style8">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style8" align="right">
                     <asp:Label ID="Label2" runat="server" Text="Apellido:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBoxApellidos" runat="server" Width="583px"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxApellidos" runat="server" Height="22px" Width="507px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style3">
+                <td class="style8">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -261,19 +247,21 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td style="margin-left: 80px" class="style3" align="right">
+                <td class="style8" align="right" style="margin-left: 80px">
                     <asp:Label ID="Label3" runat="server" Text="Edad:"></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox ID="TextBoxEdad" runat="server"></asp:TextBox>
-                    <asp:RangeValidator ID="RangeValidatorEdad" runat="server" controltovalidate="TextBoxEdad" type="Integer" minimumvalue="15" maximumvalue="110"
-                        ErrorMessage="Por favor digite una edad que se encuentre entre los 15 y 110 años"></asp:RangeValidator>
+                    <asp:RangeValidator ID="RangeValidatorEdad" runat="server" 
+                        controltovalidate="TextBoxEdad" 
+                        ErrorMessage="Por favor digite una edad que se encuentre entre los 15 y 110 años" 
+                        maximumvalue="110" minimumvalue="15" type="Integer"></asp:RangeValidator>
                 </td>
                 <td>
                     &nbsp;</td>
             </tr>
             <tr>
-                <td style="margin-left: 80px" class="style3">
+                <td style="margin-left: 80px" class="style8">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -281,7 +269,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td style="margin-left: 80px" class="style3" align="right">
+                <td style="margin-left: 80px" class="style8" align="right">
                     <asp:Label ID="Label4" runat="server" Text="Sexo:"></asp:Label>
                 </td>
                 <td>
@@ -295,7 +283,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td style="margin-left: 80px" class="style3">
+                <td style="margin-left: 80px" class="style8">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -303,7 +291,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td style="margin-left: 80px" class="style3">
+                <td style="margin-left: 80px" class="style8">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -311,7 +299,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td style="margin-left: 80px" class="style3">
+                <td style="margin-left: 80px" class="style8">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -319,7 +307,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td style="margin-left: 80px" class="style3">
+                <td style="margin-left: 80px" class="style8">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -338,7 +326,8 @@
                 <td class="style4">
                     &nbsp;</td>
                 <td align="center">
-                    <asp:Button ID="botonCrear" runat="server" Text="Aplicar Cambios" />
+                    <asp:Button ID="botonCrear" runat="server" Text="Aplicar Cambios" Height="25px" 
+                        style="margin-left: 155px" Width="145px" />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -358,7 +347,7 @@
                     &nbsp;</td>
                 <td>
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
-                        onclick="botonRegresar_Click" />
+                        onclick="botonRegresar_Click" Height="25px" Width="145px" />
                 </td>
             </tr>
         </table>
