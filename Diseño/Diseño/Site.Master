@@ -7,20 +7,23 @@
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder> 
-</head>
+    </head>
 <body>
     <form runat="server" autocomplete="off">
     <div class="page">
         <div class="header">
             <div class="title">
-                <h1>
+                <!-- <h1>
                     Sistema de Gestión de recursos humanos
-                </h1>
+                </h1> -->
             </div>
-            <div class="loginDisplay">
+            <div class="loginDisplay" 
+                
+                style="background-position: center -42px; background-image: url('/recursos-humanos.jpg'); background-repeat: repeat; background-attachment: scroll;">
                 <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
                     <AnonymousTemplate>
-                        [ <a href="/index.html" ID="HeadLoginStatus" runat="server">Volver a la Página de Inicio</a> ]
+                        [ <a href="/index.html" ID="HeadLoginStatus" runat="server" 
+                            style="color: #333399">Volver a la Página de Inicio</a> ]
                     </AnonymousTemplate>
                     <LoggedInTemplate>
                         Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
@@ -42,9 +45,14 @@
         <div class="clear">
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" 
         
-    </div>
+        
+        style="font-family: 'Courier New', Courier, 'espacio sencillo'; font-size: small; font-weight: normal; text-transform: none; color: #333399; background-color: #008888; visibility: visible; width: 1317px; height: 19px;">
+        
+      
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        Sistema de Gestión de Recursos Humanos - Grupo 3 TEC</div>
     </form>
 </body>
 </html>
