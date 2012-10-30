@@ -59,7 +59,7 @@
                         &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">
                     <asp:Button ID="botonEliminarPuesto" runat="server" 
-                            Text="Eliminar Departamento" 
+                            Text="Eliminar Puesto" 
                             onclick="botonEliminarPuesto_Click" Height="25px" Width="145px" 
                         style="margin-left: 86px" />
                 </td>
