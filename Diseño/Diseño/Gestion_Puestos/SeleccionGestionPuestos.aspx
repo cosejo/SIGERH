@@ -10,7 +10,7 @@
         }
         .style2
         {
-            width: 441px;
+            width: 434px;
         }
         </style>
 </asp:Content>
