@@ -23,7 +23,7 @@
                 <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
                     <AnonymousTemplate>
                         [ <a href="/index.html" ID="HeadLoginStatus" runat="server" 
-                            style="color: #333399">Volver a la Página de Inicio</a> ]
+                            style="color: #333399">Cerrar Sesión</a> ]
                     </AnonymousTemplate>
                     <LoggedInTemplate>
                         Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
@@ -34,7 +34,7 @@
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Cerrar Sesión" Value="Usuarios"/>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home Page" Value="Usuarios"/>
                     </Items>
                 </asp:Menu>
             </div>
@@ -48,7 +48,8 @@
     <div class="footer" 
         
         
-        style="font-family: 'Courier New', Courier, 'espacio sencillo'; font-size: small; font-weight: normal; text-transform: none; color: #333399; background-color: #008888; visibility: visible; width: 1317px; height: 19px;">
+        
+        style="font-family: 'Courier New', Courier, 'espacio sencillo'; font-size: small; font-weight: normal; text-transform: none; color: #FFFFFF; background-color: #3C1E00; visibility: visible; width: 1317px; height: 19px;">
         
       
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
