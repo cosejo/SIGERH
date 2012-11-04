@@ -32,7 +32,11 @@
                 </asp:LoginView>
             </div>
             <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                <div style="margin-left: 5px; margin-bottom:5px">
+                    <asp:Label ID="labelUsuario" runat="server" ForeColor="White" Font-Bold="True" 
+                        Font-Size="Medium"></asp:Label>
+                </div>
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" >
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home Page" Value="Usuarios"/>
                     </Items>

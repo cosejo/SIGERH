@@ -9,9 +9,13 @@ namespace Diseño
 {
     public partial class SiteMaster : System.Web.UI.MasterPage
     {
+        private Controladores.ControlSesiones _ControlSesion = new Controladores.ControlSesiones();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            String usuario = _ControlSesion.NombreUsuario;
+            if (usuario != null)
+                labelUsuario.Text = usuario;
         }
     }
 }

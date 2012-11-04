@@ -273,6 +273,9 @@
     <Compile Include="Aprobar_Vacaciones_Permisos\AprobarPermisos.aspx.designer.cs">
       <DependentUpon>AprobarPermisos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controladores\ControlSesiones.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
