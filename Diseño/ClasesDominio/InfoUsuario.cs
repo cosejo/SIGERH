@@ -9,16 +9,16 @@ namespace ClasesDominio
     {
         private String _Nombre;
         private String _Apellido;
-        private String _Cedula;
+        private int _Cedula;
         private String _Usuario;
         private int _Edad;
         private String _Sexo;
-        private String _TipoUsuario;
         private String _Departamento;
         private String _Puesto;
         private String _Rol;
         private String _Autorizacion;
         private String _Contrasena;
+        private String _Correo;
 
         public String Nombre
         {
@@ -32,7 +32,7 @@ namespace ClasesDominio
             set { _Apellido = value; }
         }
 
-        public String Cedula
+        public int Cedula
         {
             get { return _Cedula; }
             set { _Cedula = value; }
@@ -54,12 +54,6 @@ namespace ClasesDominio
         {
             get { return _Sexo; }
             set { _Sexo = value; }
-        }
-
-        public String TipoUsuario
-        {
-            get { return _TipoUsuario; }
-            set { _TipoUsuario = value; }
         }
 
         public String Departamento
@@ -91,6 +85,12 @@ namespace ClasesDominio
         {
             get { return _Contrasena; }
             set { _Contrasena = value; }
+        }
+
+        public String Correo
+        {
+            get { return _Correo; }
+            set { _Correo = value; }
         }
     }
 }

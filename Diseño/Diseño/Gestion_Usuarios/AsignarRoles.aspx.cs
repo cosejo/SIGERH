@@ -11,15 +11,18 @@ namespace Diseño.Gestion_Usuarios
     public partial class AsignarRoles : System.Web.UI.Page
     {
         #region atributos
-        private LogicaUsuarios _Logica = new LogicaUsuarios();
+        private static LogicaUsuarios _Logica = new LogicaUsuarios();
 
         #endregion
 
         #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
         {
-            cargarCedulas();
-            cargarRoles();
+            if (!IsPostBack)
+            {
+                cargarCedulas();
+                cargarRoles();
+            }
         }
         #endregion
 

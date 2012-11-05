@@ -1,9 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SeleccionGestionUsuarios.aspx.cs" Inherits="Diseño.Gestion_Usuarios.SeleccionGestionUsuarios" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
-
-
-
         .style2
         {
             width: 291px;
@@ -12,20 +9,7 @@
         {
             width: 709px;
         }
-        .style3
-        {
-            width: 291px;
-            height: 20px;
-        }
-        .style4
-        {
-            width: 709px;
-            height: 20px;
-        }
-        .style5
-        {
-            height: 20px;
-        }
+
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -97,7 +81,7 @@
                     <asp:Button ID="botonEliminarDepartamento" runat="server" 
                             Text="Eliminar Usuarios" 
                             onclick="botonEliminarDepartamento_Click" Height="25px" 
-                        Width="145px" style="margin-left: 280px" />
+                        Width="145px" style="margin-left: 280px" Visible="False" />
                 </td>
                 <td>
                         &nbsp;</td>
@@ -112,9 +96,9 @@
             </tr>
             <tr align="center">
                 <td class="style2">
-                        &nbsp;</td>
+                        </td>
                 <td class="style1" style="margin-left: 160px">
-                        &nbsp;</td>
+                        </td>
                 <td>
                     <asp:Button ID="botonRegresar" runat="server" Text="Regresar" 
                             onclick="botonRegresar_Click" Height="25px" Width="145px" />

@@ -152,6 +152,7 @@ namespace AccesoDatos
                 execproc.CommandType = CommandType.StoredProcedure;
                 execproc.Connection.Open();
                 execproc.ExecuteReader();
+                execproc.Connection.Close();
             }
 
             catch (Exception sqle) { }
@@ -170,16 +171,61 @@ namespace AccesoDatos
                 execproc.CommandType = CommandType.StoredProcedure;
                 execproc.Connection.Open();
                 execproc.ExecuteReader();
+                execproc.Connection.Close();
             }
 
             catch (Exception sqle) { }
         }
+        
+        public static Boolean crearPersona(Persona nueva)
+        {
+            if (crearUsuario(nueva))
+            {
+                asignarRolUsuario(nueva.Cedula, nueva.Rol.ElementAt(0));
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+        }
+
+        public static Boolean crearUsuario(Persona Persona)
+        {
+            SqlConnection DataConnection = new SqlConnection(_Connection);
+            try
+            {
+                SqlCommand execproc = new SqlCommand("SP_CREAR_USUARIO", DataConnection);
+                SqlParameter param = execproc.Parameters.Add("@pCedula", SqlDbType.Int);
+                param.Value = Persona.Cedula;
+                param = execproc.Parameters.Add("@pNombre", SqlDbType.VarChar, 50);
+                param.Value = Persona.Nombre;
+                param = execproc.Parameters.Add("@pApellido", SqlDbType.VarChar, 50);
+                param.Value = Persona.Apellido;
+                param = execproc.Parameters.Add("@pEdad", SqlDbType.Int);
+                param.Value = Persona.Edad;
+                param = execproc.Parameters.Add("@pSexo", SqlDbType.VarChar, 2);
+                param.Value = Persona.Sexo;
+                param = execproc.Parameters.Add("@pFk_idPuesto", SqlDbType.Int);
+                param.Value = Persona.Puesto.Id;
+                param = execproc.Parameters.Add("@pUsuario", SqlDbType.VarChar, 50);
+                param.Value = Persona.Usuario;
+                param = execproc.Parameters.Add("@pContrasena", SqlDbType.VarChar, 50);
+                param.Value = Persona.Contrasena;
+                param = execproc.Parameters.Add("@pFk_idDepartamento", SqlDbType.Int);
+                param.Value = Persona.Departamento.Id;
+                param = execproc.Parameters.Add("@pCorreo", SqlDbType.VarChar, 100);
+                param.Value = Persona.Correo;
+                execproc.CommandType = CommandType.StoredProcedure;
+                execproc.Connection.Open();
+                execproc.ExecuteReader();
+                execproc.Connection.Close();
+                return true;
+            }
+
+            catch (Exception sqle) { return false; }
+        }
 
         #endregion
-
-        public static void crearUsuario(Persona persona)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

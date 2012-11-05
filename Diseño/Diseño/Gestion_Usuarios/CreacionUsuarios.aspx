@@ -54,7 +54,10 @@
                     <asp:TextBox ID="TextBoxNombre" runat="server" Visible="true" Width="257px"></asp:TextBox>
                 </td>
                 <td class="style1">
-                    &nbsp;</td>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="TextBoxNombre"
+                        ErrorMessage="El nombre debe contener unicamente letras" 
+                        ValidationExpression="[A-Za-z\s]{2,50}"></asp:RegularExpressionValidator>
+                    </td>
             </tr>
                         <tr>
                 <td align="right" class="style3">
@@ -64,7 +67,24 @@
                     <asp:TextBox ID="TextBoxApellido" runat="server" Visible="true" Width="257px"></asp:TextBox>
                 </td>
                 <td class="style1">
-                    &nbsp;</td>
+                    &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator6" 
+                        runat="server" ControlToValidate="TextBoxApellido"
+                        ErrorMessage="El apellido debe contener unicamente letras" 
+                        ValidationExpression="[A-Za-z\s]{2,50}"></asp:RegularExpressionValidator>
+                            </td>
+            </tr>
+                        <tr>
+                <td align="right" class="style2">
+                    <asp:Label ID="Label9" runat="server" Text="Cédula:"></asp:Label>
+                </td>
+                <td class="style4" >
+                    <asp:TextBox ID="TextBoxCedula" runat="server" Visible = "true" Width="253px"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBoxCedula"
+                        ErrorMessage="La cedula debe contener 9 digitos" 
+                        ValidationExpression="\d{9}"></asp:RegularExpressionValidator>
+                            </td>
             </tr>
             <tr>
                 <td align="right" class="style2">
@@ -74,7 +94,10 @@
                     <asp:TextBox ID="TextBoxUsuario" runat="server" Visible = "true" Width="253px"></asp:TextBox>
                 </td>
                 <td>
-                    &nbsp;</td>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="TextBoxUsuario"
+                        ErrorMessage="El usuario debe contener unicamente letras y estar entre 5 y 50 caracteres" 
+                        ValidationExpression="[A-Za-z]{5,50}"></asp:RegularExpressionValidator>
+                            </td>
             </tr>
             <tr>
                 <td align="right" class="style2">
@@ -90,12 +113,12 @@
             </tr>
             <tr align="left">
                 <td  class="style2" align="right">
-                    <asp:Label ID="Label5" runat="server" Text="Sexo:" Visible = "true"></asp:Label>
+                    <asp:Label ID="Label5" runat="server" Text="Genero:"></asp:Label>
                 </td>
                 <td class="style4">
                     <asp:DropDownList ID="DropDownListSexo" runat="server" Width="136px">
-                        <asp:ListItem Value="0">Masculino</asp:ListItem>
-                        <asp:ListItem Value="1">Femenino</asp:ListItem>
+                        <asp:ListItem Value="MA">Masculino</asp:ListItem>
+                        <asp:ListItem Value="Fe">Femenino</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>
@@ -143,7 +166,7 @@
                 </td>
                 <td class="style4">
                     <asp:TextBox ID="TextBoxContrasena" runat="server" style="margin-bottom: 3px" 
-                        Width="258px"></asp:TextBox>
+                        Width="258px" TextMode="Password"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -160,10 +183,23 @@
                     &nbsp;</td>
             </tr>
             <tr align="left">
+                <td  align="right" class="style2">
+                    <asp:Label ID="Label46" runat="server" Text="Correo:"></asp:Label>
+                </td>
+                <td align="left" class="style4">
+                    <asp:TextBox ID="TextBoxCorreo" runat="server" style="margin-bottom: 3px" 
+                        Width="258px" TextMode="Email"></asp:TextBox>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr align="left">
                 <td  align="center" class="style2">
                     &nbsp;</td>
                 <td align="center" class="style4">
-                    &nbsp;</td>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxCorreo"
+                        ErrorMessage="Debe Digitar un correo valido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                </td>
                 <td>
                     &nbsp;</td>
             </tr>

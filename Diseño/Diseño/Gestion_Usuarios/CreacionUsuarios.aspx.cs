@@ -22,28 +22,18 @@ namespace Diseño.Gestion_Usuarios
         #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
         {
-            obtenerDepartamentos();
-            obtenerRoles();
-            obtenerAños();
+            if (!IsPostBack)
+            {
+                obtenerDepartamentos();
+                obtenerPuestos();
+                obtenerRoles();
+                obtenerAños();
+            } 
         }
+        
         #endregion
 
         #region verificar si sirven
-        /*Verificar Campos y borrar datos*/
-        private void verificarCampos() {
-           /* if (TextBox1.Text != "")
-            {
-                _IdActual = int.Parse(TextBox1.Text);
-                if (borrar(_IdActual))
-                {
-                    Response.Write("<SCRIPT>alert('El Usuario fue borrado correctamente')</SCRIPT>");
-                    }
-                else
-                    Response.Write("<SCRIPT>alert('Digite un número para el id del usuario a borrar')</SCRIPT>");
-             }
-            else
-                Response.Write("<SCRIPT>alert('Debe rellenar el campo para el id del usuario para poder borrarlo')</SCRIPT>");*/
-            }
 
 
         /*Insertar en la Base de Datos*/
@@ -187,13 +177,6 @@ namespace Diseño.Gestion_Usuarios
 
         #region eventos
 
-        //Response.Write("<SCRIPT>alert('El Usuario fue borrado correctamente')</SCRIPT>");
-
-        protected void ButtonEjecutar_Click(object sender, EventArgs e)
-        {
-            verificarCampos();
-        }
-
         protected void botonRegresar_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Gestion_Usuarios/SeleccionGestionUsuarios.aspx");
@@ -206,23 +189,58 @@ namespace Diseño.Gestion_Usuarios
         #endregion
 
         #region metodos
-
-        private void llenarCamposModificar() 
+    
+        private void verificarCampos()
         {
-            if (TextBoxNombre.Text != "" ||
-               TextBoxApellido.Text != "" ||
-               TextBoxUsuario.Text != "" ||
-               DropDownListDepartamento.SelectedValue != "" ||
-               DropDownListPuesto.SelectedValue != "" ||
-               DropDownListRol.SelectedValue != "" ||
-               TextBoxContrasena.Text == TextBoxConfirmarContrasena.Text ||
-               TextBoxContrasena.Text != "")
+            if (TextBoxNombre.Text == "" ||
+                TextBoxCedula.Text == "" ||
+               TextBoxApellido.Text == "" ||
+               TextBoxUsuario.Text == "" ||
+               DropDownListDepartamento.SelectedValue == "" ||
+               DropDownListPuesto.SelectedValue == "" ||
+               DropDownListRol.SelectedValue == "" ||
+               TextBoxContrasena.Text != TextBoxConfirmarContrasena.Text ||
+               TextBoxContrasena.Text == ""||
+               TextBoxCorreo.Text=="")
             {
                 Response.Write("<SCRIPT>alert('Debe ingresar todos los datos para poder realizar la operación')</SCRIPT>");
-                return;
             }
-           /* else
-                _Logica.crearUsuario(new Persona());*/
+           else{
+               verificarDatos();
+            }
+         
+            return;
+        }
+
+        public void verificarDatos() 
+        {
+            String mensaje = _Logica.verificarDatos(Int32.Parse(TextBoxCedula.Text),TextBoxUsuario.Text, TextBoxCorreo.Text);
+            if (mensaje=="")
+            {
+                crearPersona();
+            }
+            else
+            {
+                Response.Write("<SCRIPT>alert('" + mensaje + "')</SCRIPT>");
+            }
+        }
+
+        public void crearPersona() 
+        {
+            if (_Logica.crearUsuario(TextBoxNombre.Text,
+                     TextBoxApellido.Text,
+                     Int32.Parse(TextBoxCedula.Text),
+                     Int32.Parse(DropDownListEdad.SelectedValue),
+                     DropDownListSexo.SelectedValue,
+                    TextBoxUsuario.Text,
+                    TextBoxContrasena.Text,
+                    DropDownListDepartamento.SelectedIndex,
+                    DropDownListPuesto.SelectedIndex,
+                    DropDownListRol.SelectedIndex,
+                    TextBoxCorreo.Text))
+                Response.Write("<SCRIPT>alert('Usuario creado satisfactoriamente')</SCRIPT>");
+            else
+                Response.Write("<SCRIPT>alert('El usuario no puedo ser creado, por favor intente de nuevo')</SCRIPT>");
         }
 
         public void obtenerPuestos()

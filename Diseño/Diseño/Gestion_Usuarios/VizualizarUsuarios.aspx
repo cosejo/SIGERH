@@ -12,15 +12,12 @@
              Text="No hay usuarios creados dentro del sistema" Visible="False"></asp:Label>
     </p>
         <input id="txtMensajes" runat="server" style="DISPLAY:none; WIDTH: 10px"/>
-    <div style="width: 714px; margin-left: 0px">
+    <div style="width: 714px; margin-left: 0px" align="center">
     <asp:GridView ID="GridViewConsultaUsuarios" runat="server" 
         BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" 
         CellPadding="3" GridLines="Vertical" Width="911px" 
-        HorizontalAlign="Center">
+        HorizontalAlign="Center" style="margin-left: 119px">
         <AlternatingRowStyle BackColor="#DCDCDC" />
-        <Columns>
-            <asp:CommandField ShowSelectButton="True" />
-        </Columns>
         <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
         <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
         <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />

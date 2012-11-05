@@ -21,7 +21,7 @@ namespace Logica
         private List<Autorizacion> _Autorizacion = new List<Autorizacion>();
         private List<Roles> _Roles = new List<Roles>();
         public int banderaError;
-        public const int _CantidadAños = 110;
+        public const int _CantidadAños = 111;
         #endregion
 
         #region propiedades
@@ -69,6 +69,7 @@ namespace Logica
         #endregion
 
         #region metodos
+
         public void obtenerVisualizarUsuarios()
         {
             _ListaUsuarios = new List<InfoUsuario>();
@@ -86,7 +87,7 @@ namespace Logica
                       _ListaUsuarios.Add(new InfoUsuario());
                       _ListaUsuarios.ElementAt(cuenta).Nombre = lectorSQL.GetString(0);
                       _ListaUsuarios.ElementAt(cuenta).Apellido = lectorSQL.GetString(1);
-                      _ListaUsuarios.ElementAt(cuenta).Cedula = lectorSQL.GetString(2);
+                      _ListaUsuarios.ElementAt(cuenta).Cedula = lectorSQL.GetInt32(2);
                       _ListaUsuarios.ElementAt(cuenta).Usuario = lectorSQL.GetString(3);
                       _ListaUsuarios.ElementAt(cuenta).Edad = lectorSQL.GetInt32(4);
                       _ListaUsuarios.ElementAt(cuenta).Sexo = lectorSQL.GetString(5);
@@ -95,6 +96,7 @@ namespace Logica
                       _ListaUsuarios.ElementAt(cuenta).Rol = lectorSQL.GetString(8);
                       _ListaUsuarios.ElementAt(cuenta).Autorizacion = lectorSQL.GetString(9);
                       _ListaUsuarios.ElementAt(cuenta).Contrasena = lectorSQL.GetString(10);
+                      _ListaUsuarios.ElementAt(cuenta).Correo = lectorSQL.GetString(11);
                     }
                     lectorSQL.Close();
                 }
@@ -259,7 +261,7 @@ namespace Logica
                     banderaError = 0;
                     while (lectorSQL.Read())
                     {
-                        _ListaCedulas.Add(lectorSQL.GetString(0));
+                        _ListaCedulas.Add(lectorSQL.GetInt32(0).ToString());
                     }
                     lectorSQL.Close();
                 }
@@ -281,21 +283,57 @@ namespace Logica
             AccesoDatosUsuarios.asignarAutorizacionRol(_Autorizacion.ElementAt(IndicePermisos), _Roles.ElementAt(IndiceRol));
         }
 
-        #endregion
-
-        public void crearUsuario(Persona persona)
+        public Boolean crearUsuario(String Nombre, String Apellido, int Cedula, int Edad, String Sexo, String Usuario, String Contrasena, int IndicePuesto, int IndiceDepartamento, int indiceRol, String Correo)
         {
-            AccesoDatosUsuarios.crearUsuario(persona);
+            Persona nueva = new Persona(Nombre, Cedula, Edad, Sexo, Usuario, Contrasena);
+            nueva.Apellido = Apellido;
+            nueva.Puesto = _Puestos.ElementAt(IndicePuesto);
+            nueva.Departamento = _Departamentos.ElementAt(IndiceDepartamento);
+            nueva.Rol.Add(_Roles.ElementAt(indiceRol));
+            nueva.Correo = Correo;
+            return AccesoDatosUsuarios.crearPersona(nueva);
         }
 
         public List<String> obtenerAños()
         {
             List<String> _ListaAños = new List<String>();
 
-            for(int i=15; i<_CantidadAños;i++)
+            for (int i = 15; i < _CantidadAños; i++)
                 _ListaAños.Add(i.ToString());
 
             return _ListaAños;
         }
+
+        public String verificarDatos(int Cedula, String Usuario, String Correo)
+        {
+            String mensaje = "Ya se encontro a otro usuario con ";
+            obtenerVisualizarUsuarios();
+            foreach (InfoUsuario _usuario in _ListaUsuarios) 
+            { 
+                if(_usuario.Cedula==Cedula)
+                {
+                    mensaje += "Número de Cédula: ";
+                    mensaje+= Cedula.ToString();
+                    return mensaje;
+                }
+
+                if(_usuario.Usuario==Usuario)
+                {
+                    mensaje += "Nombre de Usuario: ";
+                    mensaje+= Usuario;
+                    return mensaje;
+                }
+
+                if(_usuario.Correo==Correo)
+                {
+                    mensaje += "Dirección de Correo: ";
+                    mensaje+=Correo;
+                    return mensaje;
+                }
+            }
+            return "";
+        }
+
+        #endregion
     }
 }
