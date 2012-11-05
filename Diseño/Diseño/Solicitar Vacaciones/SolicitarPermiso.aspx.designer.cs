@@ -31,13 +31,22 @@ namespace Diseño.Solicitar_Vacaciones {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control TextBoxMotivo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxMotivo;
+        
+        /// <summary>
+        /// Control CustomValidatorMotivo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator CustomValidatorMotivo;
         
         /// <summary>
         /// Control Label2.
@@ -67,6 +76,15 @@ namespace Diseño.Solicitar_Vacaciones {
         protected global::AjaxControlToolkit.CalendarExtender TextBoxFechaInicio_CalendarExtender;
         
         /// <summary>
+        /// Control RangeValidatorInicio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidatorInicio;
+        
+        /// <summary>
         /// Control Label3.
         /// </summary>
         /// <remarks>
@@ -92,6 +110,15 @@ namespace Diseño.Solicitar_Vacaciones {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::AjaxControlToolkit.CalendarExtender TextBoxFechaFinal_CalendarExtender;
+        
+        /// <summary>
+        /// Control RangeValidatorFinal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidatorFinal;
         
         /// <summary>
         /// Control botonEnviarSolicitud.

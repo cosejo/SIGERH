@@ -210,28 +210,6 @@ namespace Logica
             catch (Exception ex) { return _ListaAutorizaciones; }
         }
 
-        public void obtenerTipoUsuarios()
-        {
-            _Tipos = new List<TipoUsuario>();
-            SqlDataReader lectorSQL;
-            try
-            {
-                lectorSQL = AccesoDatosUsuarios.obtenerTipoUsuarios();
-                if (lectorSQL.HasRows)
-                {
-                    banderaError = 0;
-                     while (lectorSQL.Read())
-                    {
-                      _Tipos.Add(new TipoUsuario(lectorSQL.GetInt32(0), lectorSQL.GetString(1)));
-                    }
-                    lectorSQL.Close();
-                }
-                else
-                    banderaError = 1;
-            }
-            catch (Exception ex) { return; }
-        }
-
         public void obtenerUsuarioPorIndice(int pIndice) 
         {
             _InfoUsuarioActual = _ListaUsuarios.ElementAt(pIndice);

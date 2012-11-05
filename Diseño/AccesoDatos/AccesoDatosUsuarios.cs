@@ -28,6 +28,7 @@ namespace AccesoDatos
         #endregion
 
         #region metodos
+
         public static SqlDataReader obtenerUsuarios()
         {
             SqlConnection DataConnection = new SqlConnection(_Connection);

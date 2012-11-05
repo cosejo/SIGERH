@@ -30,8 +30,10 @@
                     <asp:Label ID="Label1" runat="server" Text="Motivo:"></asp:Label>
                 </td>
                 <td class="style2">
-                    <asp:TextBox ID="TextBox1" runat="server" Height="22px" Width="225px" 
+                    <asp:TextBox ID="TextBoxMotivo" runat="server" Height="22px" Width="225px" 
                         AutoCompleteType="Disabled"></asp:TextBox>
+                    <asp:CustomValidator ID="CustomValidatorMotivo" runat="server" 
+                        ErrorMessage="Debe ingresar un motivo" ValidationExpression="\w{10,100}" ControlToValidate="TextBoxMotivo"></asp:CustomValidator>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -53,6 +55,8 @@
                     <asp:CalendarExtender ID="TextBoxFechaInicio_CalendarExtender" runat="server" 
                         Enabled="True" TargetControlID="TextBoxFechaInicio">
                     </asp:CalendarExtender>
+                    <asp:RangeValidator ID="RangeValidatorInicio" runat="server"
+                        ErrorMessage="La fecha debe estar entre hoy y un año" Type="Date" ControlToValidate="TextBoxFechaInicio"></asp:RangeValidator>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -74,6 +78,8 @@
                     <asp:CalendarExtender ID="TextBoxFechaFinal_CalendarExtender" runat="server" 
                         Enabled="True" TargetControlID="TextBoxFechaFinal">
                     </asp:CalendarExtender>
+                    <asp:RangeValidator ID="RangeValidatorFinal" runat="server" 
+                        ErrorMessage="La fecha debe estar entre hoy y un año" Type="Date" ControlToValidate="TextBoxFechaFinal"></asp:RangeValidator>
                 </td>
                 <td>
                     &nbsp;</td>

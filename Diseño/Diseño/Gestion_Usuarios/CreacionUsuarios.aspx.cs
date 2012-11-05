@@ -268,8 +268,7 @@ namespace Diseño.Gestion_Usuarios
             DropDownListEdad.DataBind();
         }
 
-
-#endregion
+        #endregion
 
     }
 }
