@@ -16,6 +16,8 @@ namespace Diseño
         #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(_ControlSesion.NombreUsuario!=null)
+                Response.Redirect("Menu.aspx");
         }
 
         #endregion
@@ -31,13 +33,16 @@ namespace Diseño
             //Response.Redirect("/Gestion_Puestos/SeleccionGestionPuestos.aspx");
             //Response.Redirect("GestionUsuarios.aspx");
             //Response.Redirect("/Gestion_Capacitacion/SeleccionGestionCapacitacion.aspx");
-            _ControlSesion.NombreUsuario = TextBoxUsuario.Text;
-            if(TextBoxContrasena.Text!=_Pass || TextBoxUsuario.Text!=_User)
+            if (TextBoxContrasena.Text != _Pass || TextBoxUsuario.Text != _User)
             {
                 Response.Write("<SCRIPT>alert('Ha ingresado los datos incorrectamente, por favor vuelva a intentarlo')</SCRIPT>");
             }
             else
-               Response.Redirect("Menu.aspx");
+            {
+                _ControlSesion.NombreUsuario = TextBoxUsuario.Text;
+                _ControlSesion.Contrasena = TextBoxContrasena.Text;
+                Response.Redirect("Menu.aspx");
+            }
         }
 #endregion
 

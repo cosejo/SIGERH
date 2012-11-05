@@ -21,9 +21,9 @@
                 
                 style="background-position: center -42px; background-image: url('/recursos-humanos.jpg'); background-repeat: repeat; background-attachment: scroll;">
                 <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
-                    <AnonymousTemplate>
-                        [ <a href="/index.html" ID="HeadLoginStatus" runat="server" 
-                            style="color: #333399">Cerrar Sesión</a> ]
+                    <AnonymousTemplate> 
+                     <asp:LinkButton ID="LinkButtonCerrarSesion" runat="server" style="color: #333399" 
+                            onclick="CerrarSesion">Cerrar Sesión</asp:LinkButton>
                     </AnonymousTemplate>
                     <LoggedInTemplate>
                         Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
@@ -34,11 +34,11 @@
             <div class="clear hideSkiplink">
                 <div style="margin-left: 5px; margin-bottom:5px">
                     <asp:Label ID="labelUsuario" runat="server" ForeColor="White" Font-Bold="True" 
-                        Font-Size="Medium"></asp:Label>
+                        Font-Size="Medium">Bienvenido</asp:Label>
                 </div>
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" >
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home Page" Value="Usuarios"/>
+                        <asp:MenuItem NavigateUrl="/index.html" Text="Home Page" Value="Usuarios"/>
                     </Items>
                 </asp:Menu>
             </div>

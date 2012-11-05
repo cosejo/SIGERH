@@ -16,6 +16,15 @@ namespace Diseño
             String usuario = _ControlSesion.NombreUsuario;
             if (usuario != null)
                 labelUsuario.Text = usuario;
+            else
+                labelUsuario.Text = "Bienvenido";
+        }
+
+        protected void CerrarSesion(object sender, EventArgs e) 
+        {
+            _ControlSesion.NombreUsuario = null;
+            _ControlSesion.Contrasena = null;
+            Response.Redirect("~/Default.aspx");
         }
     }
 }
