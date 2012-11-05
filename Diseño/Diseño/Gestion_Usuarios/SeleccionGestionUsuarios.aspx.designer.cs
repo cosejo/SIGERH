@@ -31,6 +31,15 @@ namespace Diseño.Gestion_Usuarios {
         protected global::System.Web.UI.WebControls.Button botonModificarDepartamento;
         
         /// <summary>
+        /// Control botonAsignarPermisos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button botonAsignarPermisos;
+        
+        /// <summary>
         /// Control botonVisualizarEstructura.
         /// </summary>
         /// <remarks>

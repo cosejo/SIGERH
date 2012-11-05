@@ -5,14 +5,15 @@
     
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
+    <h2 align="center">
          Consulta de usuarios </h2>
     <p>
-         &nbsp;</p>
+         <asp:Label ID="LabelNoHayDatos" runat="server" 
+             Text="No hay usuarios creados dentro del sistema" Visible="False"></asp:Label>
+    </p>
         <input id="txtMensajes" runat="server" style="DISPLAY:none; WIDTH: 10px"/>
     <div style="width: 714px; margin-left: 0px">
     <asp:GridView ID="GridViewConsultaUsuarios" runat="server" 
-        onselectedindexchanged="GridViewConsultaUsuarios_SelectedIndexChanged" 
         BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" 
         CellPadding="3" GridLines="Vertical" Width="911px" 
         HorizontalAlign="Center">

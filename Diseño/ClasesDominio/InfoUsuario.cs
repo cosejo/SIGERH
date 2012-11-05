@@ -9,6 +9,7 @@ namespace ClasesDominio
     {
         private String _Nombre;
         private String _Apellido;
+        private String _Cedula;
         private String _Usuario;
         private int _Edad;
         private String _Sexo;
@@ -29,6 +30,12 @@ namespace ClasesDominio
         {
             get { return _Apellido; }
             set { _Apellido = value; }
+        }
+
+        public String Cedula
+        {
+            get { return _Cedula; }
+            set { _Cedula = value; }
         }
 
         public String Usuario

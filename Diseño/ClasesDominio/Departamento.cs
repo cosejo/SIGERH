@@ -12,6 +12,8 @@ namespace ClasesDominio
         private String _Nombre;
         private int _Padre;
         private List<Puesto> _Puestos;
+        private int p;
+        private string p_2;
         #endregion
 
         #region propiedades
@@ -42,11 +44,10 @@ namespace ClasesDominio
 
         #region constructores
 
-        public Departamento(int pID, String pNombre, List<Puesto> pPuestos)
+        public Departamento(int pID, String pNombre)
         {
             Id = pID;
             Nombre = pNombre;
-            Puestos = pPuestos;
         }
 
         #endregion

@@ -36,7 +36,7 @@
                     &nbsp;</td>
                 <td class="style1">
                     <asp:Label ID="Label1" runat="server" Text="Usuario:  "></asp:Label>
-                    <asp:DropDownList ID="DropDownListdepartamentos" runat="server" Height="22px" 
+                    <asp:DropDownList ID="DropDownListCedulas" runat="server" Height="22px" 
                         Width="233px" style="margin-left: 20px">
                     </asp:DropDownList>
                 </td>
@@ -57,9 +57,9 @@
                 <td class="style2">
                         &nbsp;</td>
                 <td class="style1" style="margin-left: 160px">
-                    <asp:Button ID="botonEliminarDepartamento" runat="server" 
+                    <asp:Button ID="botonEliminarUsuario" runat="server" 
                             Text="Eliminar Usuario" 
-                            onclick="botonEliminarDepartamento_Click" Height="25px" 
+                            onclick="botonEliminarUsuario_Click" Height="25px" 
                         style="margin-left: 91px" Width="145px" />
                 </td>
                 <td>

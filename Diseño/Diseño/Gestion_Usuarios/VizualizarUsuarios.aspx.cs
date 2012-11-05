@@ -22,29 +22,11 @@ namespace Diseño.Gestion_Usuarios
         #region inicializacion
         protected void Page_Load(object sender, EventArgs e)
         {
-            _Logica.obtenerUsuarios();
-            GridViewConsultaUsuarios.DataSource = _Logica.ListaUsuarios;
-            GridViewConsultaUsuarios.DataBind();
+            mostrarDatosUsuarios();
         }
         #endregion
 
         #region verificar si sirven
-        /*Verificar Campos y borrar datos*/
-        private void verificarCampos() {
-           /* if (TextBox1.Text != "")
-            {
-                _IdActual = int.Parse(TextBox1.Text);
-                if (borrar(_IdActual))
-                {
-                    Response.Write("<SCRIPT>alert('El Usuario fue borrado correctamente')</SCRIPT>");
-                    }
-                else
-                    Response.Write("<SCRIPT>alert('Digite un número para el id del usuario a borrar')</SCRIPT>");
-             }
-            else
-                Response.Write("<SCRIPT>alert('Debe rellenar el campo para el id del usuario para poder borrarlo')</SCRIPT>");*/
-            }
-
 
         /*Insertar en la Base de Datos*/
         private Boolean insertar() {
@@ -93,78 +75,6 @@ namespace Diseño.Gestion_Usuarios
             catch (Exception sqle) { return false; }
         }
 
-        private Boolean modificarUnValor(int pCambio)
-        {
-            string parametro;
-
-         /*   if (pCambio == 1)
-            {
-                //parametro = TextBox1.Text;
-            }
-            else if (pCambio == 2)
-                  //  parametro = TextBox2.Text;
-               // else
-                   // parametro = TextBox3.Text;*/
-
-            try
-            {
-                SqlConnection DataConnection = new SqlConnection(_Connection);
-                SqlCommand execproc = new SqlCommand("sp_ModificarCampoUsuario", DataConnection);
-                SqlParameter param = execproc.Parameters.Add("@Cambio", SqlDbType.Int);
-                param.Value = pCambio;
-                param = execproc.Parameters.Add("@id", SqlDbType.Int);
-               // param.Value = TextBox4.Text;
-                param = execproc.Parameters.Add("@Parametro", SqlDbType.VarChar, 100);
-               // param.Value = parametro;
-                execproc.CommandType = CommandType.StoredProcedure;
-                execproc.Connection.Open();
-                execproc.ExecuteReader();
-                return true;
-            }
-
-            catch (Exception sqle) { return false; }
-        }
-
-        private Boolean modificarDosValores(int pCambio, int pCambio2)
-        {
-            string parametro;
-            string parametro2;
-            if (pCambio == 1)
-            {
-             /*   parametro = TextBox1.Text;
-                if (pCambio2 == 2)
-                    parametro2 = TextBox2.Text;
-                else
-                    parametro2 = TextBox3.Text;
-            }
-            else {
-                parametro = TextBox2.Text;
-                parametro2 = TextBox3.Text;*/
-                }
-
-            try
-            {
-                SqlConnection DataConnection = new SqlConnection(_Connection);
-                SqlCommand execproc = new SqlCommand("sp_ModificarDosCamposUsuario", DataConnection);
-                SqlParameter param = execproc.Parameters.Add("@Cambio", SqlDbType.Int);
-                param.Value = pCambio;
-                param = execproc.Parameters.Add("@Cambio2", SqlDbType.Int);
-                param.Value = pCambio2;
-                param = execproc.Parameters.Add("@id", SqlDbType.Int);
-             //   param.Value = TextBox4.Text;
-                param = execproc.Parameters.Add("@Parametro", SqlDbType.VarChar, 100);
-              //  param.Value = parametro;
-                param = execproc.Parameters.Add("@Parametro2", SqlDbType.VarChar, 100);
-               // param.Value = parametro2;
-                execproc.CommandType = CommandType.StoredProcedure;
-                execproc.Connection.Open();
-                execproc.ExecuteReader();
-                return true;
-            }
-
-            catch (Exception sqle) { return false; }
-        }
-
         /*Borrar en la Base de Datos*/
         private Boolean borrar(int pID)
         {
@@ -186,45 +96,24 @@ namespace Diseño.Gestion_Usuarios
         #endregion
 
         #region eventos
-        protected void ButtonConsulta_Click(object sender, EventArgs e)
+        protected void botonRegresar_Click(object sender, EventArgs e)
         {
-            _Logica.obtenerUsuarios();
-            GridViewConsultaUsuarios.DataSource = _Logica.ListaUsuarios;
-            GridViewConsultaUsuarios.DataBind();
-            //Response.Write("<SCRIPT>alert('El Usuario fue borrado correctamente')</SCRIPT>");
-        }
-
-        protected void ButtonEjecutar_Click(object sender, EventArgs e)
-        {
-            //verificarCampos();
-        }
-
-        protected void botonBorrar_Click(object sender, EventArgs e)
-        {
-        }
-
-        protected void botonInsertar_Click(object sender, EventArgs e)
-        {
-            //verificarCampos();
-        }
-
-        protected void GridViewConsultaUsuarios_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //llenarCamposModificar();
-        }
-
-        protected void TextBoxConfirmarContrasena_TextChanged(object sender, EventArgs e)
-        {
-            //TextBoxConfirmarContrasena.TextMode = TextBoxMode.Password;
-        }
-
-        protected void DropDownListDepartamento_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           // obtenerPuestos();
+            Response.Redirect("~/Gestion_Usuarios/SeleccionGestionUsuarios.aspx");
         }
 #endregion
 
         #region metodos
+        private void mostrarDatosUsuarios() 
+        {
+            _Logica.obtenerVisualizarUsuarios();
+            if (_Logica.ListaUsuarios.Count == 0)
+            {
+                LabelNoHayDatos.Visible = true;
+                return;
+            }
+            GridViewConsultaUsuarios.DataSource = _Logica.ListaUsuarios;
+            GridViewConsultaUsuarios.DataBind();
+        }
 
         private void llenarCamposModificar() 
         {
@@ -303,11 +192,6 @@ namespace Diseño.Gestion_Usuarios
 
 
 #endregion
-
-        protected void botonRegresar_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("/pruebaDB/Gestion_Usuarios/SeleccionGestionUsuarios.aspx");
-        }
 
     }
 }

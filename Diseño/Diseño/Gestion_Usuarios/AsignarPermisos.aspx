@@ -17,23 +17,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <h2 align="center">
-            Asignación de Permiso</h2>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
+            Asignación de Permisos</h2>
     </div>
     <div>
         <table style="width:121%;">
             <tr align="left">
                 <td class="style2" align="right">
-                    <asp:Label ID="Label1" runat="server" Text="Usuario:"></asp:Label>
-                </td>
+                    &nbsp;</td>
                 <td class="style1">
-                    <asp:DropDownList ID="DropDownListDepartamentos" runat="server" Height="22px" 
-                        Width="239px">
-                    </asp:DropDownList>
-                </td>
+                    &nbsp;</td>
                 <td>
                         &nbsp;</td>
             </tr>
@@ -50,7 +42,7 @@
                     <asp:Label ID="Label2" runat="server" Text="Rol:"></asp:Label>
                 </td>
                 <td class="style1">
-                    <asp:DropDownList ID="DropDownListDepartamentosPadre0" runat="server" 
+                    <asp:DropDownList ID="DropDownListRoles" runat="server" 
                         Height="22px" Width="240px">
                     </asp:DropDownList>
                 </td>
@@ -70,7 +62,7 @@
                     <asp:Label ID="Label3" runat="server" Text="Permisos:"></asp:Label>
                 </td>
                 <td class="style1" style="margin-left: 160px">
-                    <asp:DropDownList ID="DropDownListDepartamentosPadre" runat="server" 
+                    <asp:DropDownList ID="DropDownListPermisos" runat="server" 
                         Height="22px" Width="240px">
                     </asp:DropDownList>
                 </td>

@@ -23,8 +23,8 @@ namespace AccesoDatos
         //string _Connection = "Data Source=WIN-6ENZ8ZHHGWQ/;Trusted_Connection=True; Initial Catalog=Proyecto;User ID=Proyecto;Password=Proyecto123;Integrated Security=true";
         //string _Connection = "Data Source=10.0.0.4,1433; Network Library=DBMSSOCN; Initial Catalog=Proyecto;User ID=sa;Password=sa;";
         //string _Connection = "";
-        //private const string _Connection = "Data Source=CARLOS-PC; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=proyecto;Password=Proyecto123;Integrated Security=True";
-        private const string _Connection = "Data Source=192.168.0.100; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=Proyecto;Password=Proyecto123;Integrated Security=false";
+        private const string _Connection = "Data Source=CARLOS-PC; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=proyecto;Password=Proyecto123;Integrated Security=True";
+        //private const string _Connection = "Data Source=192.168.0.100; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=Proyecto;Password=Proyecto123;Integrated Security=false";
         #endregion
 
         #region metodos
@@ -44,15 +44,29 @@ namespace AccesoDatos
             return lectorSQL;
         }
 
-        public static SqlDataReader obtenerPuestos(int pDepartamento)
+       public static SqlDataReader obtenerCedulas()
         {
             SqlConnection DataConnection = new SqlConnection(_Connection);
             SqlDataReader lectorSQL;
             try
             {
-                SqlCommand execproc = new SqlCommand("SP_OBTENER_PUESTOS_DEPARTAMENTO", DataConnection);
-                SqlParameter param = execproc.Parameters.Add("@pidDepartamento", SqlDbType.Int);
-                param.Value = pDepartamento;
+                SqlCommand execproc = new SqlCommand("SP_OBTENER_CEDULAS", DataConnection);
+                execproc.CommandType = CommandType.StoredProcedure;
+                execproc.Connection.Open();
+                lectorSQL = execproc.ExecuteReader();
+            }
+
+            catch (Exception sqle) { lectorSQL = null;}
+            return lectorSQL;
+        }
+
+        public static SqlDataReader obtenerPuestos()
+        {
+            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlDataReader lectorSQL;
+            try
+            {
+                SqlCommand execproc = new SqlCommand("SP_OBTENER_PUESTOS", DataConnection);
                 execproc.CommandType = CommandType.StoredProcedure;
                 execproc.Connection.Open();
                 lectorSQL = execproc.ExecuteReader();
@@ -124,6 +138,48 @@ namespace AccesoDatos
             catch (Exception sqle) { lectorSQL = null; }
             return lectorSQL;
         }
+
+        public static void asignarRolUsuario(int CedulaUsuario, Roles roles)
+        {
+            SqlConnection DataConnection = new SqlConnection(_Connection);
+            try
+            {
+                SqlCommand execproc = new SqlCommand("SP_ASIGNAR_ROLES", DataConnection);
+                SqlParameter param = execproc.Parameters.Add("@pIdCedula", SqlDbType.Int);
+                param.Value = CedulaUsuario;
+                 param = execproc.Parameters.Add("@pIdRol", SqlDbType.Int);
+                 param.Value = roles.Id;
+                execproc.CommandType = CommandType.StoredProcedure;
+                execproc.Connection.Open();
+                execproc.ExecuteReader();
+            }
+
+            catch (Exception sqle) { }
+        }
+        
+        public static void asignarAutorizacionRol(Autorizacion Autorizacion, Roles Roles)
+        {
+            SqlConnection DataConnection = new SqlConnection(_Connection);
+            try
+            {
+                SqlCommand execproc = new SqlCommand("SP_ASIGNAR_AUTORIZACION", DataConnection);
+                SqlParameter param = execproc.Parameters.Add("@pIdAutorizacion", SqlDbType.Int);
+                param.Value = Autorizacion.Id;
+                param = execproc.Parameters.Add("@pIdRol", SqlDbType.Int);
+                param.Value = Roles.Id;
+                execproc.CommandType = CommandType.StoredProcedure;
+                execproc.Connection.Open();
+                execproc.ExecuteReader();
+            }
+
+            catch (Exception sqle) { }
+        }
+
         #endregion
+
+        public static void crearUsuario(Persona persona)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace ClasesDominio
         }
         #endregion
 
-        #region
+        #region constructores
         public Autorizacion(int pId, String pNombre, String pDescripcion) 
         {
             Id = pId;

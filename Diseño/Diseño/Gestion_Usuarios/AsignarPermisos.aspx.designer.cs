@@ -13,24 +13,6 @@ namespace Diseño.Gestion_Usuarios {
     public partial class AsignarPermisos {
         
         /// <summary>
-        /// Control Label1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// Control DropDownListDepartamentos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListDepartamentos;
-        
-        /// <summary>
         /// Control Label2.
         /// </summary>
         /// <remarks>
@@ -40,13 +22,13 @@ namespace Diseño.Gestion_Usuarios {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Control DropDownListDepartamentosPadre0.
+        /// Control DropDownListRoles.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListDepartamentosPadre0;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListRoles;
         
         /// <summary>
         /// Control Label3.
@@ -58,13 +40,13 @@ namespace Diseño.Gestion_Usuarios {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Control DropDownListDepartamentosPadre.
+        /// Control DropDownListPermisos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListDepartamentosPadre;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListPermisos;
         
         /// <summary>
         /// Control botonAplicarModificacion.

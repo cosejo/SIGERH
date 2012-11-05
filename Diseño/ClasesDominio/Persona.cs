@@ -10,6 +10,7 @@ namespace ClasesDominio
         #region atributos
         private int _Id;
         private String _Nombre;
+        private String _Cedula;
         private int _Edad;
         private String _Sexo;
         private Puesto _Puesto;
@@ -36,6 +37,11 @@ namespace ClasesDominio
             set { _Edad = value; }
         }
 
+        public String Cedula
+        {
+            get { return _Cedula; }
+            set { _Cedula = value; }
+        }
 
         public String Sexo
         {
@@ -47,6 +53,13 @@ namespace ClasesDominio
         {
             get { return _Puesto; }
             set { _Puesto = value; }
+        }
+        #endregion
+
+        #region Constructores
+        public Persona(String pCedula) 
+        {
+            _Cedula = pCedula;
         }
         #endregion
     }
