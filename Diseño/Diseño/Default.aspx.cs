@@ -25,6 +25,13 @@ namespace Diseño
         #region eventos
         protected void BotonIngresar_Click(object sender, EventArgs e)
         {
+            ingresarUsuario();
+        }
+        #endregion
+
+        #region metodos
+        public void ingresarUsuario() 
+        {
             if (TextBoxContrasena.Text == "" || TextBoxUsuario.Text == "")
             {
                 Response.Write("<SCRIPT>alert('Debe ingresar todos los datos para poder iniciar sesión')</SCRIPT>");
@@ -40,6 +47,7 @@ namespace Diseño
                 _ControlSesion.NombreUsuario = TextBoxUsuario.Text;
                 _ControlSesion.Contrasena = TextBoxContrasena.Text;
                 _ControlSesion.ingresarAutorizacion();
+                _ControlSesion.ingresarCedula();
                 Response.Redirect("Menu.aspx");
             }
         }

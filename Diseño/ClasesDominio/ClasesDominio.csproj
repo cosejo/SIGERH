@@ -40,16 +40,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Autorizacion.cs" />
-    <Compile Include="Departamento.cs" />
-    <Compile Include="InfoUsuario.cs" />
-    <Compile Include="Persona.cs" />
+    <Compile Include="Usuarios\Autorizacion.cs" />
+    <Compile Include="Estructura\Departamento.cs" />
+    <Compile Include="Estructura\ActualizacionProfesional.cs" />
+    <Compile Include="Estructura\Capacitacion.cs" />
+    <Compile Include="Estructura\Curso.cs" />
+    <Compile Include="Estructura\Empleado.cs" />
+    <Compile Include="Estructura\Organizacion.cs" />
+    <Compile Include="Estructura\Proyecto.cs" />
+    <Compile Include="Expediente\Ausencia.cs" />
+    <Compile Include="Expediente\Contrato.cs" />
+    <Compile Include="Expediente\Curriculo.cs" />
+    <Compile Include="Expediente\Documento.cs" />
+    <Compile Include="Expediente\Expediente.cs" />
+    <Compile Include="Expediente\ExpedienteAbs.cs" />
+    <Compile Include="Expediente\ExpedienteProxy.cs" />
+    <Compile Include="Expediente\Incapacidad.cs" />
+    <Compile Include="Expediente\Vacaciones.cs" />
+    <Compile Include="Usuarios\InfoUsuario.cs" />
+    <Compile Include="Usuarios\Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Puesto.cs" />
-    <Compile Include="Roles.cs" />
-    <Compile Include="TipoUsuario.cs" />
-    <Compile Include="Usuario.cs" />
+    <Compile Include="Estructura\Puesto.cs" />
+    <Compile Include="Reportes\Consulta.cs" />
+    <Compile Include="Reportes\Reporte.cs" />
+    <Compile Include="Usuarios\Roles.cs" />
+    <Compile Include="Solicitudes\AdapterSolicitudes.cs" />
+    <Compile Include="Solicitudes\InterfazSolicitudEmpleado.cs" />
+    <Compile Include="Solicitudes\InterfazSolicitudesSistema.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

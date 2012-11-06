@@ -99,7 +99,8 @@
                     &nbsp;</td>
                 <td class="style2" align="left">
                     <asp:Button ID="botonEnviarSolicitud" runat="server" Text="Enviar Solicitud" Height="25px" 
-                        Width="145px" style="margin-left: 48px" />
+                        Width="145px" style="margin-left: 48px" 
+                        onclick="botonEnviarSolicitud_Click" />
                 </td>
                 <td>
                     &nbsp;</td>

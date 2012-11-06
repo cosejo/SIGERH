@@ -13,25 +13,13 @@ namespace AccesoDatos
     public static class AccesoDatosUsuarios
     {
         #region atributos
-        //string _Connection = ConfigurationManager.ConnectionStrings["Pruebas2ConnectionString"].ConnectionString;
-        //string _Connection = "Data Source=10.0.0.5,1433;Initial Catalog=Proyecto;Integrated Security=True";
-        //string _Connection = "Data Source=CARLOS-PC; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=proyecto;Password=Proyecto123;Integrated Security=True";
-        //string _Connection = "Data Source=10.0.0.5,1433; Network Library=DBMSSOCN; Initial Catalog=Proyecto;User ID=proyecto;Password=Proyecto123;Integrated Security=True";
-        //string _Connection = "Data Source=CARLOS-PC;Initial Catalog=Pruebas;Integrated Security=True";
-        //Data Source=190.190.200.100,1433;Network Library=DBMSSOCN;Initial Catalog=myDataBase;User ID=myUsername;Password=myPassword;
-        //ConnectionString="Data Source=192.100.10.98\sqlexpress;Initial Catalog=TeresaDeCalcuta1;Integrated Security=SSPI;"
-        //string _Connection = "Data Source=WIN-6ENZ8ZHHGWQ/;Trusted_Connection=True; Initial Catalog=Proyecto;User ID=Proyecto;Password=Proyecto123;Integrated Security=true";
-        //string _Connection = "Data Source=10.0.0.4,1433; Network Library=DBMSSOCN; Initial Catalog=Proyecto;User ID=sa;Password=sa;";
-        //string _Connection = "";
-        private const string _Connection = "Data Source=CARLOS-PC; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=proyecto;Password=Proyecto123;Integrated Security=True";
-        //private const string _Connection = "Data Source=192.168.0.100; Network Library=DBMSSOCN; Initial Catalog=SIGERH;User ID=Proyecto;Password=Proyecto123;Integrated Security=false";
         #endregion
 
         #region metodos
 
         public static SqlDataReader obtenerUsuarios()
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos.AccesoDatos._Connection);
             SqlDataReader lectorSQL;
             try
             {
@@ -45,9 +33,9 @@ namespace AccesoDatos
             return lectorSQL;
         }
 
-       public static SqlDataReader obtenerCedulas()
+        public static SqlDataReader obtenerCedulas()
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos._Connection);
             SqlDataReader lectorSQL;
             try
             {
@@ -63,7 +51,7 @@ namespace AccesoDatos
 
         public static SqlDataReader obtenerPuestos()
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos._Connection);
             SqlDataReader lectorSQL;
             try
             {
@@ -78,7 +66,7 @@ namespace AccesoDatos
 
         public static SqlDataReader obtenerDepartamentos()
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos._Connection);
             SqlDataReader lectorSQL;
             try
             {
@@ -94,7 +82,7 @@ namespace AccesoDatos
 
         public static SqlDataReader obtenerRoles() 
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos._Connection);
             SqlDataReader lectorSQL;
             try
             {
@@ -110,7 +98,7 @@ namespace AccesoDatos
 
         public static SqlDataReader obtenerAutorizaciones() 
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos._Connection);
             SqlDataReader lectorSQL;
             try
             {
@@ -126,7 +114,7 @@ namespace AccesoDatos
 
         public static SqlDataReader obtenerTipoUsuarios() 
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos._Connection);
             SqlDataReader lectorSQL;
             try
             {
@@ -142,7 +130,7 @@ namespace AccesoDatos
 
         public static void asignarRolUsuario(int CedulaUsuario, Roles roles)
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos._Connection);
             try
             {
                 SqlCommand execproc = new SqlCommand("SP_ASIGNAR_ROLES", DataConnection);
@@ -161,7 +149,7 @@ namespace AccesoDatos
         
         public static void asignarAutorizacionRol(Autorizacion Autorizacion, Roles Roles)
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos._Connection);
             try
             {
                 SqlCommand execproc = new SqlCommand("SP_ASIGNAR_AUTORIZACION", DataConnection);
@@ -193,7 +181,7 @@ namespace AccesoDatos
 
         public static Boolean crearUsuario(Persona Persona)
         {
-            SqlConnection DataConnection = new SqlConnection(_Connection);
+            SqlConnection DataConnection = new SqlConnection(AccesoDatos._Connection);
             try
             {
                 SqlCommand execproc = new SqlCommand("SP_CREAR_USUARIO", DataConnection);

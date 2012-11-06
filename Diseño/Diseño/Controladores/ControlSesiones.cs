@@ -26,6 +26,12 @@ namespace Diseño.Controladores
             set { Session["Contrasena"] = value; }
         }
 
+        public int Cedula
+        {
+            get { return (int)Session["Cedula"]; }
+            set { Session["Cedula"] = value; }
+        }
+
         public String Autorizacion
         {
             get { return (String)Session["Autorizacion"]; }
@@ -47,6 +53,11 @@ namespace Diseño.Controladores
         public void ingresarAutorizacion() 
         {
             Autorizacion = _Logica.UsuarioActual.Autorizacion;
+        }
+
+        public void ingresarCedula() 
+        {
+            Cedula = _Logica.UsuarioActual.Cedula;
         }
 
         #endregion
