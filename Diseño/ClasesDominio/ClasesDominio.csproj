@@ -67,37 +67,6 @@
     <Compile Include="Solicitudes\AdapterSolicitudes.cs" />
     <Compile Include="Solicitudes\InterfazSolicitudEmpleado.cs" />
     <Compile Include="Solicitudes\InterfazSolicitudesSistema.cs" />
-    <Compile Include="ActualizacionProfesional.cs" />
-    <Compile Include="AdapterSolicitudes.cs" />
-    <Compile Include="Ausencia.cs" />
-    <Compile Include="Autorizacion.cs" />
-    <Compile Include="Capacitacion.cs" />
-    <Compile Include="Consulta.cs" />
-    <Compile Include="Contrato.cs" />
-    <Compile Include="Curriculo.cs" />
-    <Compile Include="Curso.cs" />
-    <Compile Include="Departamento.cs" />
-    <Compile Include="Documento.cs" />
-    <Compile Include="Empleado.cs" />
-    <Compile Include="Expediente.cs" />
-    <Compile Include="ExpedienteAbs.cs" />
-    <Compile Include="ExpedienteProxy.cs" />
-    <Compile Include="Incapacidad.cs" />
-    <Compile Include="InfoUsuario.cs" />
-    <Compile Include="InterfazSolicitudEmpleado.cs" />
-    <Compile Include="InterfazSolicitudesSistema.cs" />
-    <Compile Include="login.cs" />
-    <Compile Include="Organizacion.cs" />
-    <Compile Include="Permisos.cs" />
-    <Compile Include="Persona.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proyecto.cs" />
-    <Compile Include="Puesto.cs" />
-    <Compile Include="Reporte.cs" />
-    <Compile Include="Roles.cs" />
-    <Compile Include="TipoUsuario.cs" />
-    <Compile Include="Usuario.cs" />
-    <Compile Include="Vacaciones.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

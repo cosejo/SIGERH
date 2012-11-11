@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-
 namespace ClasesDominio
 {
     public class Departamento
@@ -33,7 +32,8 @@ namespace ClasesDominio
         public int Padre
         {
             get { return _Padre; }
-            set { _Padre = value; }        }
+            set { _Padre = value; }
+        }
 
         public List<Puesto> Puestos
         {
